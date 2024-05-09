@@ -3,7 +3,7 @@ guid: bdc59005005eaf340a891b37930a5389
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -756,39 +763,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Enemy_019_D_0: 1513971517
+      Enemy_019_D_1: 2144886238
+      Enemy_019_D_10: 1985247055
+      Enemy_019_D_11: -647739853
+      Enemy_019_D_12: -307521223
+      Enemy_019_D_13: 1407783213
+      Enemy_019_D_14: -57266039
+      Enemy_019_D_15: 1411598232
+      Enemy_019_D_16: 1143307489
+      Enemy_019_D_17: 1602908776
+      Enemy_019_D_18: -580833538
+      Enemy_019_D_19: 670284262
       Enemy_019_D_2: -766356114
+      Enemy_019_D_20: -397583646
+      Enemy_019_D_21: 626552737
+      Enemy_019_D_22: -841246105
+      Enemy_019_D_23: -959157817
+      Enemy_019_D_24: 1365707791
       Enemy_019_D_25: 109565118
       Enemy_019_D_26: 1911089685
-      Enemy_019_D_8: -1918130986
-      Enemy_019_D_21: 626552737
-      Enemy_019_D_9: 468896833
-      Enemy_019_D_14: -57266039
-      Enemy_019_D_11: -647739853
-      Enemy_019_D_1: 2144886238
-      Enemy_019_D_12: -307521223
-      Enemy_019_D_5: 25154001
-      Enemy_019_D_18: -580833538
-      Enemy_019_D_10: 1985247055
-      Enemy_019_D_7: -56279815
-      Enemy_019_D_28: -612596429
-      Enemy_019_D_23: -959157817
-      Enemy_019_D_0: 1513971517
-      Enemy_019_D_6: 785907831
-      Enemy_019_D_3: 254506869
-      Enemy_019_D_29: -944804633
-      Enemy_019_D_17: 1602908776
-      Enemy_019_D_15: 1411598232
-      Enemy_019_D_22: -841246105
-      Enemy_019_D_19: 670284262
-      Enemy_019_D_4: 261321033
-      Enemy_019_D_24: 1365707791
-      Enemy_019_D_20: -397583646
-      Enemy_019_D_13: 1407783213
-      Enemy_019_D_16: 1143307489
       Enemy_019_D_27: -1770092372
-  spritePackingTag: 
+      Enemy_019_D_28: -612596429
+      Enemy_019_D_29: -944804633
+      Enemy_019_D_3: 254506869
+      Enemy_019_D_4: 261321033
+      Enemy_019_D_5: 25154001
+      Enemy_019_D_6: 785907831
+      Enemy_019_D_7: -56279815
+      Enemy_019_D_8: -1918130986
+      Enemy_019_D_9: 468896833
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

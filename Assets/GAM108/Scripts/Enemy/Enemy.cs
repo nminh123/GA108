@@ -22,13 +22,11 @@ public class Enemy : MonoBehaviour
     private bool isMovingRight = true;
 
     private SpriteRenderer eScale;
-    private Animator eAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         eScale = GetComponent<SpriteRenderer>();
-        eAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -65,14 +63,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //test
-    private IEnumerator eDieAnimation()
-    {
-        eAnimator.SetBool("isDie", true);
-        yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
+    //test 
+    //private IEnumerator eDieAnimation()
+    //{
+    //    eAnimator.SetBool("isDie", true);
+    //    yield return new WaitForSeconds(2f);
+    //    Destroy(gameObject);
 
 
-    }
+    //}
 
 }
