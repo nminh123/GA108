@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private float moveDirection;
     [SerializeField] private int countJump = 0;
     [SerializeField] private float speed;
     [SerializeField] private float JumpForce; // jump force
     [SerializeField] private bool isGround;
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Animator anim;
     //private bool DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
@@ -18,36 +19,14 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
     public void Update()
     { 
         inputJump();
 
         AnimationController();
     }
-    private void FixedUpdate()
-    {
-        
-        if(Input.GetKey(KeyCode.Space))
-        {
-            if(isGround)
-            {
-                Jump();
-                isGround = false;
-                DoubleJump = false;
-            }
-            else if (DoubleJump)
-            {
-                Jump();
-                DoubleJump = false; 
-            }
-        }
-        
-        if(isGround && !Input.GetKey(KeyCode.Space))
-        {
-            DoubleJump = false;
-        }
-    }
-    private void FixedUpdate()
+        private void FixedUpdate()
     {
         Move();
     }
@@ -68,7 +47,7 @@ public class Player : MonoBehaviour
 
         isMoving = rb.velocity.x != 0;
 
-        amin.SetBool("isRuning", isMoving);
+        anim.SetBool("isRuning", isMoving);
 
     }
     #endregion
