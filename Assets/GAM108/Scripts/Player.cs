@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private float moveDirection;
-    [SerializeField] private int countJump = 0;
+    //[SerializeField] private int countJump = 0;
     [SerializeField] private float speed;
     [SerializeField] private float JumpForce; // jump force
     private bool isFacingRight = true;
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
             {
                 Jump();
                 isGround = false;
-                countJump++;
+                //countJump++;
                 //DoubleJump = false;
             }
             /*else if (DoubleJump)
