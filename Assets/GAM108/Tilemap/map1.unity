@@ -1331,12 +1331,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 407ddc69f099d3945afca7d51b0c0b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1260044874}
-  amin: {fileID: 1260044879}
   countJump: 0
   speed: 5
   JumpForce: 10
   isGround: 0
+  rb: {fileID: 1260044874}
+  anim: {fileID: 1260044879}
 --- !u!95 &1260044879
 Animator:
   serializedVersion: 5
