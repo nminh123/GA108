@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Animator anim;
+    [Header("Physic Player")]
     [SerializeField] private int countJump = 0;
     [SerializeField] private float speed;
     [SerializeField] private float JumpForce; // jump force
     [SerializeField] private bool isGround;
-    [SerializeField] Rigidbody2D rb;
-    [SerializeField] Animator anim;
     [SerializeField] private bool islive = true;
-
+    [Header("Count Down")]
+    [SerializeField] private float AatackTime;
+    [SerializeField] private float CountDownAatack;
     //private bool DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
@@ -27,6 +30,7 @@ public class Player : MonoBehaviour
         inputJump();
         isDeah();
         AnimationController();
+        aatack();
     }
         private void FixedUpdate()
     {
@@ -57,6 +61,15 @@ public class Player : MonoBehaviour
         anim.SetBool("isDeah", islive);
     }
     #endregion
+    private void aatack()
+    {
+        AatackTime -= Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.J) && AatackTime < 0)
+        {
+                anim.SetTrigger("aatacking");
+                AatackTime = CountDownAatack;                
+        }
+    }
     private void Flip()
     {
         facingRight = !facingRight;
@@ -71,13 +84,9 @@ public class Player : MonoBehaviour
     private void isDeah()
     {
         if (Input.GetKeyDown(KeyCode.U) && islive)
-        {
             islive = false;
-        }
         else if (Input.GetKeyDown(KeyCode.U) && !islive)
-        {
             islive = true;
-        }
 
     }
     private void inputJump()
