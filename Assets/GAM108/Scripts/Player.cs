@@ -4,25 +4,99 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{
-    private float moveDirection;
+{   
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Animator amin;
+    [Header("Physic Player")]
     [SerializeField] private int countJump = 0;
     [SerializeField] private float speed;
     [SerializeField] private float JumpForce; // jump force
-    private bool isFacingRight = true;
     [SerializeField] private bool isGround;
     //private bool DoubleJump;
-    private Rigidbody2D rigid;
+    private float moveDirection;
+    private bool facingRight = true;
+    private bool isMoving = true;
     public void Start()
     {
-        rigid = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
     public void Update()
+    { 
+        inputJump();
+
+        AnimationController();
+    }
+    private void FixedUpdate()
     {
+<<<<<<< Updated upstream
         Move();
+    }
+
+    private void Move()
+=======
+        
         if(Input.GetKey(KeyCode.Space))
         {
             if(isGround)
+            {
+                Jump();
+                isGround = false;
+                DoubleJump = false;
+            }
+            else if (DoubleJump)
+            {
+                Jump();
+                DoubleJump = false; 
+            }
+        }
+        
+        if(isGround && !Input.GetKey(KeyCode.Space))
+        {
+            DoubleJump = false;
+        }
+    }
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
+    public void Move()
+>>>>>>> Stashed changes
+    {
+        moveDirection = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveDirection * speed, rb.velocity.y);
+        if (rb.velocity.x > 0 && !facingRight)
+            Flip();
+        else if (rb.velocity.x < 0 && facingRight)
+            Flip();
+
+    }
+    #region camdongvao
+    private void AnimationController()
+    {
+
+        isMoving = rb.velocity.x != 0;
+
+        amin.SetBool("isRuning", isMoving);
+
+    }
+    #endregion
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
+    }
+
+    public void Jump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+        //DoubleJump = !DoubleJump;
+    }
+    private void inputJump()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (isGround)
             {
                 Jump();
                 isGround = false;
@@ -35,37 +109,16 @@ public class Player : MonoBehaviour
                 //DoubleJump = false; 
             }*/
         }
-        
+
         /*if(isGround && !Input.GetKey(KeyCode.Space))
         {
             DoubleJump = false;
         }*/
     }
-    
-    public void Move()
-    {
-        moveDirection = Input.GetAxis("Horizontal");
-        rigid.velocity = new Vector2(moveDirection * speed, rigid.velocity.y);
-        Flip();
-
-    }
-    public void Flip()
-    {
-        isFacingRight = !isFacingRight;
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
-    }
-
-    public void Jump()
-    {
-        rigid.velocity = new Vector2(rigid.velocity.x, JumpForce);
-        //DoubleJump = !DoubleJump;
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if(collision.gameObject.tag == Tag.GroundTag)
         {
             isGround = true;
         }
