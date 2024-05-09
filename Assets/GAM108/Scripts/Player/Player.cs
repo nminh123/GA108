@@ -48,6 +48,8 @@ public class Player : MonoBehaviour
         isMoving = rb.velocity.x != 0;
 
         anim.SetBool("isRuning", isMoving);
+        anim.SetFloat("Jump/Fall", rb.velocity.y);
+        anim.SetBool("IsGournded", isGround);
 
     }
     #endregion
