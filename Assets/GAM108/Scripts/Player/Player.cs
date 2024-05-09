@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] private bool isGround;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator anim;
+    [SerializeField] private bool islive = true;
+
     //private bool DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
@@ -23,7 +25,7 @@ public class Player : MonoBehaviour
     public void Update()
     { 
         inputJump();
-
+        isDeah();
         AnimationController();
     }
         private void FixedUpdate()
@@ -33,6 +35,8 @@ public class Player : MonoBehaviour
 
     public void Move()
     {
+        if (!islive)
+            return;
         moveDirection = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveDirection * speed, rb.velocity.y);
         if (rb.velocity.x > 0 && !facingRight)
@@ -50,7 +54,7 @@ public class Player : MonoBehaviour
         anim.SetBool("isRuning", isMoving);
         anim.SetFloat("Jump/Fall", rb.velocity.y);
         anim.SetBool("IsGournded", isGround);
-
+        anim.SetBool("isDeah", islive);
     }
     #endregion
     private void Flip()
@@ -58,12 +62,23 @@ public class Player : MonoBehaviour
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
     }
-
     public void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, JumpForce);
         countJump++;
         //DoubleJump = !DoubleJump;
+    }
+    private void isDeah()
+    {
+        if (Input.GetKeyDown(KeyCode.U) && islive)
+        {
+            islive = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.U) && !islive)
+        {
+            islive = true;
+        }
+
     }
     private void inputJump()
     {
