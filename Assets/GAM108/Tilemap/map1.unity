@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 431639280}
   - component: {fileID: 431639279}
   - component: {fileID: 431639278}
+  - component: {fileID: 431639283}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -416,7 +417,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1229749241, guid: d1980cc23577fb44c966c348a7417d97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -434,12 +435,25 @@ Transform:
   m_GameObject: {fileID: 431639277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.57, y: 4.04, z: 0}
+  m_LocalPosition: {x: 4.5, y: 4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &431639283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431639277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2378a83720a153545b9d60ce77681006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &728253792
 GameObject:
   m_ObjectHideFlags: 0
