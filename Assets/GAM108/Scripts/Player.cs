@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float JumpForce; // jump force
     private bool isFacingRight = true;
     [SerializeField] private bool isGround;
-    private bool DoubleJump;
+    //private bool DoubleJump;
     private Rigidbody2D rigid;
     public void Start()
     {
@@ -26,19 +26,20 @@ public class Player : MonoBehaviour
             {
                 Jump();
                 isGround = false;
-                DoubleJump = false;
+                countJump++;
+                //DoubleJump = false;
             }
-            else if (DoubleJump)
+            /*else if (DoubleJump)
             {
                 Jump();
-                DoubleJump = false; 
-            }
+                //DoubleJump = false; 
+            }*/
         }
         
-        if(isGround && !Input.GetKey(KeyCode.Space))
+        /*if(isGround && !Input.GetKey(KeyCode.Space))
         {
             DoubleJump = false;
-        }
+        }*/
     }
     
     public void Move()
@@ -59,7 +60,7 @@ public class Player : MonoBehaviour
     public void Jump()
     {
         rigid.velocity = new Vector2(rigid.velocity.x, JumpForce);
-        DoubleJump = !DoubleJump;
+        //DoubleJump = !DoubleJump;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
