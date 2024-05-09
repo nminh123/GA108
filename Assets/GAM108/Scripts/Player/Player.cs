@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
     public void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+        countJump++;
         //DoubleJump = !DoubleJump;
     }
     private void inputJump()
