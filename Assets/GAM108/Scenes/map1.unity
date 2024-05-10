@@ -12758,7 +12758,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: dbbe1ff2cc547f64d88ac187401bb15b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -12889,9 +12889,9 @@ MonoBehaviour:
   speed: 5
   JumpForce: 14
   isGround: 0
-  rb: {fileID: 1260044874}
-  anim: {fileID: 1260044879}
   islive: 1
+  AatackTime: 0
+  CountDownAatack: 0
 --- !u!95 &1260044879
 Animator:
   serializedVersion: 5
