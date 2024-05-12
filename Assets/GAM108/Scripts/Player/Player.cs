@@ -141,12 +141,6 @@ public class Player : MonoBehaviour
             Debug.Log("chet ne");
             SceneManager.LoadScene(0);   
         }
-
-        if(collision.gameObject.tag == Tag.OffSetTag)
-        {
-            Debug.Log("chet ne");
-            SceneManager.LoadScene(0);   
-        }
     }
 
     /*void offSet()
