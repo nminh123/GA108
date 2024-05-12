@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private float moveDirection;
     private bool facingRight = true;
     private bool isMoving = true;
+    private const float OffSetPosition = 10.0f;
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -126,5 +127,23 @@ public class Player : MonoBehaviour
             Debug.Log("chet ne");
             SceneManager.LoadScene(0);
         }
+
+        if(collision.gameObject.tag == Tag.OffSetTag)
+        {
+            Debug.Log("chet ne");
+            SceneManager.LoadScene(0);   
+        }
     }
+
+    /*void offSet()
+    {
+        float offsetThreshold = 0.1f; // Define a small threshold for position comparison
+        Vector2 offset = new Vector2(transform.position.x, OffSetPosition);
+
+        // Check if the Y position is within the threshold of OffSetPosition
+        if (Mathf.Abs(this.transform.position.y - OffSetPosition) < offsetThreshold)
+        {
+            SceneManager.LoadScene(0); // Reload the scene
+        }
+    }*/
 }
