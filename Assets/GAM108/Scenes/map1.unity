@@ -18175,9 +18175,10 @@ MonoBehaviour:
   JumpForce: 14
   isGround: 0
   islive: 1
-  Hp: 3
-  Hptime: 0.5
-  HPTIME: 0.5
+  Hp: 20
+  _time: 0.5
+  HPTIME: 2
+  isHp: 0
   AatackTime: 0
   CountDownAatack: 0
 --- !u!95 &1260044879
