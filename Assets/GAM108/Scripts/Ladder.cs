@@ -12,10 +12,11 @@ public class Ladder : MonoBehaviour
     private bool isLadder;
     private float vertical;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator anim;
     // Update is called once per frame
     void Update()
     {
-        vertical = Input.GetAxis("Vertical");
+        vertical = Input.GetAxisRaw("Vertical");
         if(isLadder && Mathf.Abs(vertical) > 0f)
         {
             isClimbing = true;
@@ -33,13 +34,18 @@ public class Ladder : MonoBehaviour
         {
             rb.gravityScale = 4f;
         }
+
+        anim.SetFloat("Jump/Fall", rb.velocity.y);
+        anim.SetBool("Climb", isLadder);
     }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Ladder"))
         {
             isLadder = true;
+            
         }
     }
 
