@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
     [Header("Count Down")]
     [SerializeField] private float AatackTime;
     [SerializeField] private float CountDownAatack;
-    //private bool DoubleJump;
+    private bool DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
     private bool isMoving = true;
@@ -118,6 +119,12 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == Tag.GroundTag)
         {
             isGround = true;
+        }
+
+        if(collision.gameObject.tag == Tag.EnemyTag)
+        {
+            Debug.Log("chet ne");
+            SceneManager.LoadScene(0);
         }
     }
 }
