@@ -16,8 +16,9 @@ public class Player : MonoBehaviour
     [SerializeField] private bool islive = true;
     [Header("Hp")]
     [SerializeField] private int Hp;
-    [SerializeField] private float Hptime;
+    [SerializeField] private float _time;
     [SerializeField] private float HPTIME;
+    [SerializeField] bool isHp;
     [Header("Count Down")]
     [SerializeField] private float AatackTime;
     [SerializeField] private float CountDownAatack;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         isDeah();
         AnimationController();
         aatack();
+        time();
     }
     private void FixedUpdate()
     {
@@ -75,6 +77,16 @@ public class Player : MonoBehaviour
             anim.SetTrigger("aatacking");
             AatackTime = CountDownAatack;
         }
+    }
+    private void time()
+    {
+        _time -= Time.deltaTime;
+        if (isHp == false && _time <= 0)
+        {
+            _time = HPTIME;
+            isHp = true;
+        }
+
     }
     private void Flip()
     {
@@ -129,7 +141,12 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == Tag.EnemyTag)
         {
-            Hp--;
+            if(isHp == true)
+            {
+                Hp = Hp -1;
+                isHp = false;
+            }
+            
             if (Hp == 0)
                 SceneManager.LoadScene(0);
             Debug.Log("chet ne");
