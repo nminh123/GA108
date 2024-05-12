@@ -14,6 +14,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float JumpForce; // jump force
     [SerializeField] private bool isGround;
     [SerializeField] private bool islive = true;
+    [Header("Hp")]
+    [SerializeField] private int Hp;
+    [SerializeField] private float Hptime;
+    [SerializeField] private float HPTIME;
     [Header("Count Down")]
     [SerializeField] private float AatackTime;
     [SerializeField] private float CountDownAatack;
@@ -27,13 +31,13 @@ public class Player : MonoBehaviour
     }
 
     public void Update()
-    { 
+    {
         inputJump();
         isDeah();
         AnimationController();
         aatack();
     }
-        private void FixedUpdate()
+    private void FixedUpdate()
     {
         Move();
     }
@@ -67,8 +71,8 @@ public class Player : MonoBehaviour
         AatackTime -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.J) && AatackTime < 0)
         {
-                anim.SetTrigger("aatacking");
-                AatackTime = CountDownAatack;                
+            anim.SetTrigger("aatacking");
+            AatackTime = CountDownAatack;
         }
     }
     private void Flip()
@@ -113,18 +117,23 @@ public class Player : MonoBehaviour
             DoubleJump = false;
         }*/
     }
+  
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == Tag.GroundTag)
+        if (collision.gameObject.tag == Tag.GroundTag)
         {
             isGround = true;
         }
 
-        if(collision.gameObject.tag == Tag.EnemyTag)
+        if (collision.gameObject.tag == Tag.EnemyTag)
         {
+            Hp--;
+            if (Hp == 0)
+                SceneManager.LoadScene(0);
             Debug.Log("chet ne");
-            SceneManager.LoadScene(0);
+
         }
     }
+    
 }
