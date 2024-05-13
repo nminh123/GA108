@@ -95,9 +95,19 @@ public class Player : MonoBehaviour
     }
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, JumpForce);
-        countJump++;
-        //DoubleJump = !DoubleJump;
+        if (isGround)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            countJump++;
+            isGround = false;
+            DoubleJump = true;
+        }
+        if(countJump < 2)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            DoubleJump = false;
+            countJump = 0;
+        }
     }
     private void isDeah()
     {
@@ -111,27 +121,10 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            if (isGround)
-            {
-                Jump();
-                isGround = false;
-                //countJump++;
-                //DoubleJump = false;
-            }
-            /*else if (DoubleJump)
-            {
-                Jump();
-                //DoubleJump = false; 
-            }*/
+            Jump();
         }
-
-        /*if(isGround && !Input.GetKey(KeyCode.Space))
-        {
-            DoubleJump = false;
-        }*/
     }
   
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == Tag.GroundTag)
@@ -171,4 +164,13 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(0); // Reload the scene
         }
     }*/
+
+    bool MoreJump()
+    {
+        if(countJump < 2)
+            DoubleJump = true;
+        if(countJump >= 2)
+            DoubleJump = false;
+        return DoubleJump;
+    }
 }
