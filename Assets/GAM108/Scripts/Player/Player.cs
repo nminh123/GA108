@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator anim;
     [Header("Physic Player")]
-    [SerializeField] private int countJump = 0;
     [SerializeField] private float speed;
     [SerializeField] private float JumpForce; // jump force
     [SerializeField] private bool isGround;
@@ -22,10 +21,12 @@ public class Player : MonoBehaviour
     [Header("Count Down")]
     [SerializeField] private float AatackTime;
     [SerializeField] private float CountDownAatack;
-    private bool DoubleJump;
+
+    [SerializeField] private int DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
     private bool isMoving = true;
+    private bool isGround1;
     private const float OffSetPosition = 10.0f;
     public void Start()
     {
@@ -66,6 +67,7 @@ public class Player : MonoBehaviour
         anim.SetBool("isRuning", isMoving);
         anim.SetFloat("Jump/Fall", rb.velocity.y);
         anim.SetBool("IsGournded", isGround);
+        anim.SetBool("IsGournded", isGround1);
         anim.SetBool("isDeah", islive);
     }
     #endregion
@@ -95,10 +97,19 @@ public class Player : MonoBehaviour
     }
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, JumpForce);
-        countJump++;
-        //DoubleJump = !DoubleJump;
+        if (isGround && DoubleJump >= 0)
+        {
+            DoubleJump--;
+            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            isGround = true;
+            isGround1 = false;
+
+        }
+        if(DoubleJump ==0)
+            isGround = false;
     }
+        
+    
     private void isDeah()
     {
         if (Input.GetKeyDown(KeyCode.U) && islive)
@@ -109,34 +120,19 @@ public class Player : MonoBehaviour
     }
     private void inputJump()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (isGround)
-            {
-                Jump();
-                isGround = false;
-                //countJump++;
-                //DoubleJump = false;
-            }
-            /*else if (DoubleJump)
-            {
-                Jump();
-                //DoubleJump = false; 
-            }*/
+            Jump();
         }
-
-        /*if(isGround && !Input.GetKey(KeyCode.Space))
-        {
-            DoubleJump = false;
-        }*/
     }
   
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == Tag.GroundTag)
         {
             isGround = true;
+            isGround1 = true;
+            DoubleJump = 2;
         }
 
         if (collision.gameObject.tag == Tag.EnemyTag)
@@ -171,4 +167,5 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(0); // Reload the scene
         }
     }*/
+
 }
