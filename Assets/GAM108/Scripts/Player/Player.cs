@@ -102,14 +102,13 @@ public class Player : MonoBehaviour
             DoubleJump--;
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             isGround = true;
-            isGround1 = false;
+            //isGround1 = false;
 
         }
         if(DoubleJump ==0)
             isGround = false;
     }
         
-    
     private void isDeah()
     {
         if (Input.GetKeyDown(KeyCode.U) && islive)

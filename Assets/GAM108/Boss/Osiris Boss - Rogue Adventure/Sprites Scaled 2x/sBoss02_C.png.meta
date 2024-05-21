@@ -1,0 +1,3810 @@
+fileFormatVersion: 2
+guid: b8f662e7e040e6e4bbf87fca05c32b7a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sBoss02_C_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 960
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3789d8f6d5bd448b47c4682f160675
+      internalID: 491992895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 960
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecef19ebac380f64586c3a277329f505
+      internalID: -1491834174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 960
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f42f2e3fedb70e40b8634cda577f17f
+      internalID: 364411335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 960
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab37d9597c561f4ebe0478c91dc27c8
+      internalID: 294977184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_4
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 960
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6ab95b322310a499f4e02361fa192b
+      internalID: 543891190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_5
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 960
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e67a0c54c1c0b447a65675a19f80918
+      internalID: 2027439342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 804
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb8c78e5d127aa4982f4f2c80b10fc2
+      internalID: 1570267623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 806
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db62adcc302c4fa43bf30d22a2c817c0
+      internalID: -979565881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_8
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 808
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02a897a7a47350448cdf21d11ae0ab7
+      internalID: 1079309104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 806
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37ca9a118dd16f44940ea2f28ff7335
+      internalID: 87321348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_10
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 804
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9a77839c5d3274e8b1a838117c596a
+      internalID: -238625597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_11
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 802
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01a778b472c8fc4882ccc07ada30eb7
+      internalID: 1168027632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 640
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156f6418a4c70f24382d482a293fb9aa
+      internalID: -1235981734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 640
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce40dfb5d65a91d48921426095f1f6c2
+      internalID: 496936536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_14
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 640
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061e0bec6a22fdd42bc608b363558f68
+      internalID: 1060562234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 640
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8c39f089d7f2a48a7fb21428d385ed
+      internalID: 988802955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_16
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 640
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ea786ebc77f304f81a0c91638503b7
+      internalID: -103630520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_17
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 640
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9287d3f0c02b4b46883d0b0ff30285e
+      internalID: -2055475336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 480
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eca6dbd0886f544ab5ad92ad1b95984
+      internalID: 767844892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 480
+        width: 138
+        height: 124
+      alignment: 9
+      pivot: {x: 0.23808289, y: 0.36784068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffa306b52034ad4fbdef869429ad56a
+      internalID: -1510026808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 480
+        width: 138
+        height: 92
+      alignment: 9
+      pivot: {x: 0.2392472, y: 0.49601945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4ff404a1fd20f42859a4a374afbb11
+      internalID: -1078912084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 480
+        width: 138
+        height: 92
+      alignment: 9
+      pivot: {x: 0.24290267, y: 0.4925703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a837cc892c22a114da0c0b4e6174449e
+      internalID: -1366023649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_22
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 480
+        width: 68
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5364075, y: 0.47415227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a3eb4cf0a06a8448dba7f3eee40883
+      internalID: 857280763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_23
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 480
+        width: 62
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5901962, y: 0.45240623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f503ecd931b2a248acfe36fc3b67179
+      internalID: 146892476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 320
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93830276e742f264dbd3432d02fb8d8f
+      internalID: -2051483430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_25
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 320
+        width: 134
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18cd29e1e4b79d439f37b14e4b10eac
+      internalID: -2020132917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_26
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 320
+        width: 134
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804b75c84b7cee2448d50aaa2051e46e
+      internalID: -960132982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_27
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 320
+        width: 134
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02215b1ffae5fc4c8c704e319ec52fd
+      internalID: -383334213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_28
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 320
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77148563c398c184383b30c8ee56bc05
+      internalID: -230242746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_29
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 320
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836b8007df4824f4598d334c26c9f2a4
+      internalID: 2097679110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_30
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 160
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a620d543786771c4289d3b14608b7364
+      internalID: -1872322879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 160
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d91f1d809eda7a429f99431be44b6cb
+      internalID: 939950136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_32
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 160
+        width: 52
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824ac308863012e42a7e94b3a04d433c
+      internalID: 442159184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_33
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 160
+        width: 52
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e485a4de56f85b042afa8a04ce51c575
+      internalID: 256916797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_34
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 160
+        width: 52
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24286926611edd34baf6e6f8194cd6ea
+      internalID: -342285030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_35
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 160
+        width: 52
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694170ca4638b8c4d94ee3baf811ece1
+      internalID: -2048609428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_36
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 94
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111aa8544842f2a4fbbc9a104061c401
+      internalID: -1539157002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_37
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 98
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e8867693e52f94c9edc33ad6e033bd
+      internalID: -1738373799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_38
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 86
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743be567a612b7845a393bb066be225e
+      internalID: 331043038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_39
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94367ff3f417b1b4cad4e71ff0ab1f94
+      internalID: 590500361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_40
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 92
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e167c8b242c90764cb6afcce626f2c0c
+      internalID: 2011287272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_41
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 94
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084bee36b3ac1d84491a415dabcb737e
+      internalID: -1371522731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_42
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77b49434252a934285a703ea372b0b8
+      internalID: -188060541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_43
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 82
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131a6d345e4835944a4f3b2c087e362b
+      internalID: 2081019244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_44
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 84
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8a2aad6e0045d47936137ba6b0ee47
+      internalID: -1921855410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_45
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 86
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0eb9b08a38e234084ccd3eb42556b8
+      internalID: -2096690417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_46
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 88
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f63eb19342c3514fb8b38fe3ac139d5
+      internalID: -851472799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_47
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 80
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d1ef3972a67264d83e338bad61866b
+      internalID: 1227741704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_48
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 82
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea3ad7b2a6e06446ac834bb64077c34
+      internalID: -20309528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_49
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 84
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c60381a18399a4497cc3288fc95a68
+      internalID: -868430928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_50
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 84
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3db632d5d990e429aee22b32636798
+      internalID: -2073448580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_51
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 74
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e68481e2f26ea40bbb72c6bf4832c7
+      internalID: -660253169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_52
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 72
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60671029bb18b24487822623074d9d5
+      internalID: -2120311102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_53
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 74
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01434744d07f59429ac5bbae2d36ca3
+      internalID: -1928845817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_54
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 76
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7f484f47715b747a17c20cdc28fadd
+      internalID: -1637656080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_55
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 76
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d946bf93bd09b734db90abe835904727
+      internalID: -525157112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_56
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 78
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f64c3f09efc7cb42b7b893a0b584fb5
+      internalID: 1128627352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_57
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 78
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9aeef095fb0c2647997d6374bd42590
+      internalID: 530597947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_58
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 72
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9fe5ab07bc35d4181cf1d3361a768d
+      internalID: -1185964867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_59
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 72
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69de9b63fda81c4dbc6e8da03365031
+      internalID: -507359280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_60
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 62
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96257ad47ad6a7409a7e07fbfe778f0
+      internalID: -377003277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_61
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 74
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7e02b18c582fb4698db94d1dd1db1e
+      internalID: -1536448804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_62
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 62
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6340b0d1e5cc32e4db1a95b9ab8a438d
+      internalID: -2092905213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 66
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab27e95e995fa5419232a698878e902
+      internalID: 1256725579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_64
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ea2759af0301d469ce5291c20a8ad4
+      internalID: -1878810300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_65
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 68
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacb5f14e293fb74b9a1ee5e0407927b
+      internalID: -1670091426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_66
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 68
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb61e84ba739cf47b1befeb9d761de1
+      internalID: -72406242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_67
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 68
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45e7583d32769d439b8490334d0b7b0
+      internalID: -936427741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_68
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 64
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c78c119c1a3fa43971acc2f77637e6
+      internalID: -716533143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_69
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 70
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c362e53b94a5d1043803ab1430ce5ee3
+      internalID: 359173529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_70
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 56
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d52867bae41c64478e36cf89158d725
+      internalID: 730959620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_71
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc07829a3addfef47a072f0492cb3cd5
+      internalID: 512840118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_72
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 62
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f3a84afc03f1945a7ebe307f13184a
+      internalID: -623079607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_73
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 50
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830417a488d3840409ddeda9b850e03c
+      internalID: 1240776971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_74
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9593b97d4e2aaa94b9843dd4fe413c58
+      internalID: 198593297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_75
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 54
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6244e955d6cc43345b5856f973d54468
+      internalID: 1699381085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_76
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 64
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7094558de71d15340a8dd3554d59ee73
+      internalID: -907225063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_77
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 58
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bf9dd10b531204bbe6afb92cbae1d4
+      internalID: 1302885007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_78
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 62
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc10d5616de3c0046a65438872049bda
+      internalID: -1296332429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_79
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e7a577f842d934ab04d4c1623fded7
+      internalID: 705835513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_80
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 54
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aaa788adc0a5e249bbb90af0e28adaa
+      internalID: 765614570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_81
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 58
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516f2280fbc6eed4c9f81155206bbf81
+      internalID: 809699648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_82
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 62
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ea9d7903eccfd4bab9be83c84d4f09
+      internalID: -1079479242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_83
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 60
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78d303f67fba73459939fb672c97205
+      internalID: 2138259494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_84
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 58
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fe5ee6cc4f0e04bbb296f149e00ec7
+      internalID: -1445352377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_85
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 60
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacbd9deb6bd53f4ca04ec22df26719d
+      internalID: 1394803461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_86
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 58
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99dfdbb236507d44b624753e20d2089
+      internalID: 1558204689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_87
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 60
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f824387bbd7684681ca283c42e1347
+      internalID: 2049238794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_88
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 56
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc338e6208e254249b314dc50877367b
+      internalID: -359909892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_89
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 50
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a0c7ea31edb18418782ccba3160226
+      internalID: 204794348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_90
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f8c49a87723a046bbcf0f17a050893
+      internalID: 1544050604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_91
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bb5f96ba99c114c94e463603e925a5
+      internalID: -2142917736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_92
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 52
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59029f39fed546244a72cd3851a3b74a
+      internalID: 1394264143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_93
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 54
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27521f32a1bf0ea488acfd0386eba401
+      internalID: 1054049616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_94
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 52
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49367e2e6f98051488c9a7aecab7ef9f
+      internalID: 256095478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_95
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 50
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986df2951655c7246a8c409464fdfa2b
+      internalID: 319273596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_96
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 52
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be21efb0db6b3d34083969ca6141f294
+      internalID: -1414862028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_97
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 54
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a78bd56c17a6e6449b6e0e819d07da8
+      internalID: 495663937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_98
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 52
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3a5db9dab3c2b46b7a39d73abf3a60
+      internalID: -156094337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_99
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 52
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f8705c775af514aa1f704b43e6d6c9
+      internalID: 819999428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_100
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 42
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a772cfb71f6d4b43af4c32cb4a9ab27
+      internalID: 1739421571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_101
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 42
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724ac8bdd092c924db54b9f7952defc1
+      internalID: 883457982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_102
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 46
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b120b2165a4850645a1b783ccfb04eff
+      internalID: -1340001065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_103
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 48
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f8741856a73b74ab8046c6faa0b479
+      internalID: 1920884279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_104
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 46
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277b50fb495ba734fa03f3fee99c8b72
+      internalID: -97442741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_105
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bd40b87c59af94e900866b3d16ba86
+      internalID: 994235645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_106
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 50
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fca8be6ab72b264cbb9b43041d6eb5e
+      internalID: 407249241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_107
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 48
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8d4d48847083747a5ed63b6d175e9c
+      internalID: -328039843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_108
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 48
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aea05fdb2077c44b93033c5fb5d8c5d
+      internalID: -1034659219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_109
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 42
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8680d4af59f28854cada3c0f890a88ee
+      internalID: 853464329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_110
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e48da3353baa349be72768a9f8a039
+      internalID: -1998095853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_111
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18e2062455d1f142bce8c46f197055b
+      internalID: 1546157095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_112
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 36
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d1a9d50655eec4f97a5b4f5321bea9
+      internalID: 1602682242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_113
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 44
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a93b4e5250df74aa84b77a31f13143
+      internalID: 349073679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_114
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 42
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61efb326022001b44afc403d9260a60f
+      internalID: -4418381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_115
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 42
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6925597ea5405b744b7aa8fb2f209f23
+      internalID: 1287473074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_116
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c958d8b9531ad4b8b0ea3c4f97827e
+      internalID: 2022060503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_117
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 44
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a129d2be52d15047910b2db57375696
+      internalID: 220814733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_118
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 40
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b07891b09211f4592b8ef7cd73d74e
+      internalID: 1655550220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_119
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c432e4e49fc6d4b9232fd9b8d3c667
+      internalID: 342846043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_120
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 44
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f6ca79a48c58b46b273f85b53eed66
+      internalID: 1234996886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_121
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 44
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431b77e5322161944811fdaf2af23e8c
+      internalID: 406529393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_122
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 40
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ddd5f75c69a704b9ffc0d67ebb35dc
+      internalID: 303173675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_123
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 32
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69962e991332cc64eaed0655b58827e3
+      internalID: -1411283790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_124
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 28
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16bc2371bff3be49b9bd42f1c4b515f
+      internalID: -1307603738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_125
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 24
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e27a784658130d42816e9f7b3c14945
+      internalID: 668821353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_126
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656d928f67429dd45854465b9f705fb6
+      internalID: -2045558448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_127
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab78cd5d929990418e5b6835e5bada4
+      internalID: -1156508839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_128
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 32
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0753958b44cd85c41ae4011a86e5da3c
+      internalID: -1483530775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_129
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 34
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bcf79df785bfa489b4e10f71cc2a27
+      internalID: 1325662374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_130
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 28
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb7f43a2750d3546834189b5cb65391
+      internalID: -1468175257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_131
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 24
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65916e66cd202c34083e68a78451d2ac
+      internalID: -1183414502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_132
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 28
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf639a465216664e85c4ccc48bb7acc
+      internalID: -16335990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_133
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 38
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb72f355caf4cf4d8ab338c63e5d819
+      internalID: -1943945143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_134
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 36
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a1e05bce95e59418275ee43a561b1e
+      internalID: 405715740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_135
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f58cdbf354dc04b8b145c4f9024403
+      internalID: -351395424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_136
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24e8d73dd310f54db1ed6cacc3e117c
+      internalID: -492915526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_137
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 30
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d920ccc4a84ae44e837a9adc9eed1e8
+      internalID: -1672195783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_138
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 36
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aab40f8befcf024bad76122ee1088f4
+      internalID: 796388050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_139
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98df8aacdb05d414a878ad7f6bae4586
+      internalID: 416287116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_140
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 32
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46891e7f3e8060942adb40fc818332c6
+      internalID: 687568141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_141
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 36
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e826cb49d1b7fa64a8615868e0a95060
+      internalID: 1903962223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_142
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 32
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b3ae5e2758d4e4f82dae0e12665214
+      internalID: -33231882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_143
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 34
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e834ebf334867458d7347f873c7754
+      internalID: -1874654168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_144
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 38
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2aebd629a9ea94e94e6b3a15bb6f99
+      internalID: 452114757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_145
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17c3feee2225594c897c3aaa494adc8
+      internalID: -1383546498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_146
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 20
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b293f38e6376d334a8125a4cdef581f1
+      internalID: 509281006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_147
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 26
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defe8b514f150e24da2def70f0a63a77
+      internalID: -1175678997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_148
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cce37d29ce7c2046a94c1bc926a6482
+      internalID: 2044305055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_149
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 24
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa31986c1cd59d4d9f6e9988550df11
+      internalID: 1021733789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_150
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 26
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85a92fb7e297f4f8568ba62fc24478
+      internalID: 1863175623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_151
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fdd90d67e760e47af480668276d153
+      internalID: 638131996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_152
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 16
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd0024850f0b01469d353ac59a2202b
+      internalID: -1554176758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_153
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4900968e51a6248a9c6919292cf42b
+      internalID: -1341063329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_154
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 16
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb4b446358924f438bb096948582a21
+      internalID: -1051603360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_155
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eecb7f8a1c41604696fdb4901b6cdde
+      internalID: 1671025988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_156
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 8
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdb8aedb9a5b78498f7340b02677135
+      internalID: -1834617765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_157
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068649e221418d54995ca739a8517ca5
+      internalID: -559297347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_158
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 18
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15c504531fc3d64c810bcef08371c4c
+      internalID: -1792926448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_159
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 14
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c843fc6dbd2c59468614099af88db0e
+      internalID: 121293304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_160
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 8
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec206234ba694c48a69b5df8f3952a3
+      internalID: 151141776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_161
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 12
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2e5d2cc436a984199a79699d9e2d15
+      internalID: 816922744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_162
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 16
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731d5f2f0102d6941ad09d873f06c48c
+      internalID: -1640236971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_163
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3610e5d9c0fbc409f9d83c54af3ea4
+      internalID: -1552062490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_164
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4830af57754f748bfc335f7f92b01c
+      internalID: -393228952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_165
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63ad27225255314f868d5b3c09d7c6c
+      internalID: -1643186852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_166
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cfd9a837de4444ca33129fad5c6f94
+      internalID: 1549496366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_167
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d374110e170f534883d080a306c839e
+      internalID: 1856195040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sBoss02_C_0: 491992895
+      sBoss02_C_1: -1491834174
+      sBoss02_C_10: -238625597
+      sBoss02_C_100: 1739421571
+      sBoss02_C_101: 883457982
+      sBoss02_C_102: -1340001065
+      sBoss02_C_103: 1920884279
+      sBoss02_C_104: -97442741
+      sBoss02_C_105: 994235645
+      sBoss02_C_106: 407249241
+      sBoss02_C_107: -328039843
+      sBoss02_C_108: -1034659219
+      sBoss02_C_109: 853464329
+      sBoss02_C_11: 1168027632
+      sBoss02_C_110: -1998095853
+      sBoss02_C_111: 1546157095
+      sBoss02_C_112: 1602682242
+      sBoss02_C_113: 349073679
+      sBoss02_C_114: -4418381
+      sBoss02_C_115: 1287473074
+      sBoss02_C_116: 2022060503
+      sBoss02_C_117: 220814733
+      sBoss02_C_118: 1655550220
+      sBoss02_C_119: 342846043
+      sBoss02_C_12: -1235981734
+      sBoss02_C_120: 1234996886
+      sBoss02_C_121: 406529393
+      sBoss02_C_122: 303173675
+      sBoss02_C_123: -1411283790
+      sBoss02_C_124: -1307603738
+      sBoss02_C_125: 668821353
+      sBoss02_C_126: -2045558448
+      sBoss02_C_127: -1156508839
+      sBoss02_C_128: -1483530775
+      sBoss02_C_129: 1325662374
+      sBoss02_C_13: 496936536
+      sBoss02_C_130: -1468175257
+      sBoss02_C_131: -1183414502
+      sBoss02_C_132: -16335990
+      sBoss02_C_133: -1943945143
+      sBoss02_C_134: 405715740
+      sBoss02_C_135: -351395424
+      sBoss02_C_136: -492915526
+      sBoss02_C_137: -1672195783
+      sBoss02_C_138: 796388050
+      sBoss02_C_139: 416287116
+      sBoss02_C_14: 1060562234
+      sBoss02_C_140: 687568141
+      sBoss02_C_141: 1903962223
+      sBoss02_C_142: -33231882
+      sBoss02_C_143: -1874654168
+      sBoss02_C_144: 452114757
+      sBoss02_C_145: -1383546498
+      sBoss02_C_146: 509281006
+      sBoss02_C_147: -1175678997
+      sBoss02_C_148: 2044305055
+      sBoss02_C_149: 1021733789
+      sBoss02_C_15: 988802955
+      sBoss02_C_150: 1863175623
+      sBoss02_C_151: 638131996
+      sBoss02_C_152: -1554176758
+      sBoss02_C_153: -1341063329
+      sBoss02_C_154: -1051603360
+      sBoss02_C_155: 1671025988
+      sBoss02_C_156: -1834617765
+      sBoss02_C_157: -559297347
+      sBoss02_C_158: -1792926448
+      sBoss02_C_159: 121293304
+      sBoss02_C_16: -103630520
+      sBoss02_C_160: 151141776
+      sBoss02_C_161: 816922744
+      sBoss02_C_162: -1640236971
+      sBoss02_C_163: -1552062490
+      sBoss02_C_164: -393228952
+      sBoss02_C_165: -1643186852
+      sBoss02_C_166: 1549496366
+      sBoss02_C_167: 1856195040
+      sBoss02_C_17: -2055475336
+      sBoss02_C_18: 767844892
+      sBoss02_C_19: -1510026808
+      sBoss02_C_2: 364411335
+      sBoss02_C_20: -1078912084
+      sBoss02_C_21: -1366023649
+      sBoss02_C_22: 857280763
+      sBoss02_C_23: 146892476
+      sBoss02_C_24: -2051483430
+      sBoss02_C_25: -2020132917
+      sBoss02_C_26: -960132982
+      sBoss02_C_27: -383334213
+      sBoss02_C_28: -230242746
+      sBoss02_C_29: 2097679110
+      sBoss02_C_3: 294977184
+      sBoss02_C_30: -1872322879
+      sBoss02_C_31: 939950136
+      sBoss02_C_32: 442159184
+      sBoss02_C_33: 256916797
+      sBoss02_C_34: -342285030
+      sBoss02_C_35: -2048609428
+      sBoss02_C_36: -1539157002
+      sBoss02_C_37: -1738373799
+      sBoss02_C_38: 331043038
+      sBoss02_C_39: 590500361
+      sBoss02_C_4: 543891190
+      sBoss02_C_40: 2011287272
+      sBoss02_C_41: -1371522731
+      sBoss02_C_42: -188060541
+      sBoss02_C_43: 2081019244
+      sBoss02_C_44: -1921855410
+      sBoss02_C_45: -2096690417
+      sBoss02_C_46: -851472799
+      sBoss02_C_47: 1227741704
+      sBoss02_C_48: -20309528
+      sBoss02_C_49: -868430928
+      sBoss02_C_5: 2027439342
+      sBoss02_C_50: -2073448580
+      sBoss02_C_51: -660253169
+      sBoss02_C_52: -2120311102
+      sBoss02_C_53: -1928845817
+      sBoss02_C_54: -1637656080
+      sBoss02_C_55: -525157112
+      sBoss02_C_56: 1128627352
+      sBoss02_C_57: 530597947
+      sBoss02_C_58: -1185964867
+      sBoss02_C_59: -507359280
+      sBoss02_C_6: 1570267623
+      sBoss02_C_60: -377003277
+      sBoss02_C_61: -1536448804
+      sBoss02_C_62: -2092905213
+      sBoss02_C_63: 1256725579
+      sBoss02_C_64: -1878810300
+      sBoss02_C_65: -1670091426
+      sBoss02_C_66: -72406242
+      sBoss02_C_67: -936427741
+      sBoss02_C_68: -716533143
+      sBoss02_C_69: 359173529
+      sBoss02_C_7: -979565881
+      sBoss02_C_70: 730959620
+      sBoss02_C_71: 512840118
+      sBoss02_C_72: -623079607
+      sBoss02_C_73: 1240776971
+      sBoss02_C_74: 198593297
+      sBoss02_C_75: 1699381085
+      sBoss02_C_76: -907225063
+      sBoss02_C_77: 1302885007
+      sBoss02_C_78: -1296332429
+      sBoss02_C_79: 705835513
+      sBoss02_C_8: 1079309104
+      sBoss02_C_80: 765614570
+      sBoss02_C_81: 809699648
+      sBoss02_C_82: -1079479242
+      sBoss02_C_83: 2138259494
+      sBoss02_C_84: -1445352377
+      sBoss02_C_85: 1394803461
+      sBoss02_C_86: 1558204689
+      sBoss02_C_87: 2049238794
+      sBoss02_C_88: -359909892
+      sBoss02_C_89: 204794348
+      sBoss02_C_9: 87321348
+      sBoss02_C_90: 1544050604
+      sBoss02_C_91: -2142917736
+      sBoss02_C_92: 1394264143
+      sBoss02_C_93: 1054049616
+      sBoss02_C_94: 256095478
+      sBoss02_C_95: 319273596
+      sBoss02_C_96: -1414862028
+      sBoss02_C_97: 495663937
+      sBoss02_C_98: -156094337
+      sBoss02_C_99: 819999428
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
