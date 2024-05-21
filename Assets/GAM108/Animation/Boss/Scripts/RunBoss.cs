@@ -27,7 +27,7 @@ public class RunBoss : StateMachineBehaviour
         float dis = Vector2.Distance(player.position, rb.position);
         if (dis > attackRange)
         rb.MovePosition(newPos);
-
+        
             if (dis < attackRange)
         {
             rb.velocity = new Vector2(0, 0);           
