@@ -15,6 +15,8 @@ public class Boss : MonoBehaviour
     [Header("CountDown")]
     public float StartTime;
     public float ResetTime;
+    [Header("HP")]
+    public int Heal;
 
     private void Update()
     {
@@ -31,6 +33,18 @@ public class Boss : MonoBehaviour
 
             
             
+    }
+    public void takeDame(int damege)
+    {
+        Heal -= damege;
+        if(Heal <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        gameObject.SetActive(false);
     }
     public void LookPlayer()
     {
