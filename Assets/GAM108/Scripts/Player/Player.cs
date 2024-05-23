@@ -102,13 +102,21 @@ public class Player : MonoBehaviour
             DoubleJump--;
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             isGround = true;
-            //isGround1 = false;
+            isGround1 = false;
 
         }
         if(DoubleJump ==0)
             isGround = false;
     }
         
+    public void TakeDamege(int damege)
+    {
+        Hp -= damege;
+        if(Hp <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
     private void isDeah()
     {
         if (Input.GetKeyDown(KeyCode.U) && islive)
@@ -124,8 +132,7 @@ public class Player : MonoBehaviour
             Jump();
         }
     }
-  
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == Tag.GroundTag)
         {
@@ -133,6 +140,10 @@ public class Player : MonoBehaviour
             isGround1 = true;
             DoubleJump = 2;
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       
 
         if (collision.gameObject.tag == Tag.EnemyTag)
         {
@@ -143,7 +154,7 @@ public class Player : MonoBehaviour
             }
             
             if (Hp == 0)
-                SceneManager.LoadScene(0);
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Debug.Log("chet ne");
 
         }
@@ -151,7 +162,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == Tag.OffSetTag)
         {
             Debug.Log("chet ne");
-            SceneManager.LoadScene(0);   
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
