@@ -154,7 +154,7 @@ public class Player : MonoBehaviour
             }
             
             if (Hp == 0)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Debug.Log("chet ne");
 
         }
@@ -162,7 +162,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == Tag.OffSetTag)
         {
             Debug.Log("chet ne");
-            SceneManager.LoadScene(0);   
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
