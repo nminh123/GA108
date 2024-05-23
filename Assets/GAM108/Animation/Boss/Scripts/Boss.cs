@@ -69,7 +69,11 @@ public class Boss : MonoBehaviour
         pos += transform.up * attack.y;
         Collider2D col = Physics2D.OverlapCircle(pos, attackRange, PlayerMask);
         if (col != null)
-            Debug.Log("attack");
+        {
+            col.GetComponent<Player>().TakeDamege(2);
+            Debug.Log("chet ne x2");
+        }
+            
     }
 
 }
