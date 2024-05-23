@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
             DoubleJump--;
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             isGround = true;
-            //isGround1 = false;
+            isGround1 = false;
 
         }
         if(DoubleJump ==0)
@@ -124,8 +124,7 @@ public class Player : MonoBehaviour
             Jump();
         }
     }
-  
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == Tag.GroundTag)
         {
@@ -133,6 +132,10 @@ public class Player : MonoBehaviour
             isGround1 = true;
             DoubleJump = 2;
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       
 
         if (collision.gameObject.tag == Tag.EnemyTag)
         {
