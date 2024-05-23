@@ -109,6 +109,14 @@ public class Player : MonoBehaviour
             isGround = false;
     }
         
+    public void TakeDamege(int damege)
+    {
+        Hp -= damege;
+        if(Hp <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
     private void isDeah()
     {
         if (Input.GetKeyDown(KeyCode.U) && islive)
@@ -146,7 +154,7 @@ public class Player : MonoBehaviour
             }
             
             if (Hp == 0)
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Debug.Log("chet ne");
 
         }
