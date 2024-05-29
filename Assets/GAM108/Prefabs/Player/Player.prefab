@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5405630393785229865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8947262332127304677}
+  m_Layer: 6
+  m_Name: Point Shot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8947262332127304677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5405630393785229865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.772, y: -0.431, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4149340955397916403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5761155948598207232
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +223,7 @@ Transform:
   m_Children:
   - {fileID: 1199289254526030363}
   - {fileID: 6286346044473794032}
+  - {fileID: 8947262332127304677}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &360207497490312324
@@ -353,7 +385,10 @@ MonoBehaviour:
   isHp: 0
   AatackTime: 0
   CountDownAatack: 0
-  DoubleJump: 4
+  skill: {fileID: 555147222493038472, guid: fd6c990c0ee12c6468235576c77fb77c, type: 3}
+  PointShot: {fileID: 8947262332127304677}
+  skillTime: 2
+  CountDownSkill: 2
 --- !u!114 &7558190370752816720
 MonoBehaviour:
   m_ObjectHideFlags: 0

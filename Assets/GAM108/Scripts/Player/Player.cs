@@ -21,8 +21,12 @@ public class Player : MonoBehaviour
     [Header("Count Down")]
     [SerializeField] private float AatackTime;
     [SerializeField] private float CountDownAatack;
-
-    [SerializeField] private int DoubleJump;
+    [Header("Skill")]
+    [SerializeField] GameObject skill;
+    [SerializeField] Transform PointShot;
+    [SerializeField] private float skillTime;
+    [SerializeField] private float CountDownSkill;
+    private int DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
     private bool isMoving = true;
@@ -39,6 +43,7 @@ public class Player : MonoBehaviour
         isDeah();
         AnimationController();
         aatack();
+        Skill();
         time();
     }
     private void FixedUpdate()
@@ -71,10 +76,27 @@ public class Player : MonoBehaviour
         anim.SetBool("isDeah", islive);
     }
     #endregion
+    private void Skill()
+    {
+        skillTime -= Time.deltaTime;
+        if(Input.GetKeyDown(KeyCode.I) && skillTime <= 0)
+        {
+
+            StartCoroutine(skill1());
+            skillTime = CountDownSkill;
+            
+        }
+    }
+    IEnumerator skill1()
+    {
+        anim.SetTrigger("aatacking");
+        yield return new WaitForSeconds(.3f);
+        Instantiate(skill, PointShot.position, transform.rotation);
+    }
     private void aatack()
     {
         AatackTime -= Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.J) && AatackTime < 0)
+        if (Input.GetKeyDown(KeyCode.J) && AatackTime <= 0)
         {
             anim.SetTrigger("aatacking");
             AatackTime = CountDownAatack;
@@ -90,7 +112,7 @@ public class Player : MonoBehaviour
         }
 
     }
-    private void Flip()
+    public void Flip()
     {
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);

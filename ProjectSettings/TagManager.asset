@@ -9,6 +9,7 @@ TagManager:
   - Ladder
   - HitBox
   - OffSet
+  - Skill
   layers:
   - Default
   - TransparentFX
