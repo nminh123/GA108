@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         MoveEnemy();
     }
@@ -60,6 +60,13 @@ public class Enemy : MonoBehaviour
         {
             //StartCoroutine(eDieAnimation());
             Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("Skill"))
+        {
+            //StartCoroutine(eDieAnimation());
+            speed = 0f;
+            Destroy(gameObject,.3f);
+               
         }
     }
 
