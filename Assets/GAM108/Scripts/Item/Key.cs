@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevel : MonoBehaviour
+public class Key : MonoBehaviour
 {
     public Animator anim;
     public GameObject _LoadSecne;
