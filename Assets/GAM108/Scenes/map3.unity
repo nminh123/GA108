@@ -9237,6 +9237,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.48
       objectReference: {fileID: 0}
+    - target: {fileID: 5656384676765708882, guid: 55eeeb1a34ecd8b42a6af20d12187f4e, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371107169012328439, guid: 55eeeb1a34ecd8b42a6af20d12187f4e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 66964334}
+    - target: {fileID: 6371107169012328439, guid: 55eeeb1a34ecd8b42a6af20d12187f4e, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8369171642319142267, guid: 55eeeb1a34ecd8b42a6af20d12187f4e, type: 3}
       propertyPath: m_IsActive
       value: 0
