@@ -184,7 +184,8 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == Tag.OffSetTag)
         {
             Debug.Log("chet ne");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+            SceneManager.LoadScene("GameOver");
         }
     }
 
