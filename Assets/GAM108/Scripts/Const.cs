@@ -8,4 +8,5 @@ public class Tag : MonoBehaviour
     public const string GroundTag = "Ground";
     public const string EnemyTag = "Enemy";
     public const string OffSetTag = "OffSet";
+    public const string Spike = "Spike";
 }
