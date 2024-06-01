@@ -162,11 +162,23 @@ public class Player : MonoBehaviour
             isGround1 = true;
             DoubleJump = 2;
         }
+
+        if(collision.gameObject.tag == Tag.Spike)
+        {
+            //if(isHp == true)
+            
+                Hp = Hp -1;
+                //isHp = false;
+            
+            
+            if (Hp == 0)
+               //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+               SceneManager.LoadScene("GameOver");
+            Debug.Log("Chet ne");
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
-
         if (collision.gameObject.tag == Tag.EnemyTag)
         {
             if(isHp == true)
@@ -176,7 +188,8 @@ public class Player : MonoBehaviour
             }
             
             if (Hp == 0)
-               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+               //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+               SceneManager.LoadScene("GameOver");
             Debug.Log("chet ne");
 
         }
@@ -188,7 +201,6 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-
     /*void offSet()
     {
         float offsetThreshold = 0.1f; // Define a small threshold for position comparison
