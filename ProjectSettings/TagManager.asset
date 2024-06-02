@@ -11,6 +11,7 @@ TagManager:
   - OffSet
   - Skill
   - Spike
+  - HBenemy
   layers:
   - Default
   - TransparentFX
