@@ -17,16 +17,19 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float rightEnemy = 0f;
     #endregion
+    private Animator anim;
+    public Collider2D colli;
 
     //check xem quai di chuyen trai hay phai
     private bool isMovingRight = true;
-
+    
     private SpriteRenderer eScale;
 
     // Start is called before the first frame update
     void Start()
     {
         eScale = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -56,17 +59,13 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("HitBox"))
+        if (collision.gameObject.CompareTag("HitBox") || collision.gameObject.CompareTag("Skill"))
         {
-            //StartCoroutine(eDieAnimation());
-            Destroy(gameObject);
-        }
-        if (collision.gameObject.CompareTag("Skill"))
-        {
-            //StartCoroutine(eDieAnimation());
+            colli.enabled = false;
             speed = 0f;
-            Destroy(gameObject,.3f);
-               
+            anim.SetTrigger("Deah");
+            Destroy(gameObject, 1.1f);
+
         }
     }
 

@@ -194,5 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  leftEnemy: -1.55
-  rightEnemy: 4.3
+  leftEnemy: 4.9
+  rightEnemy: 11.72
+  colli: {fileID: 5258487336325257907}
