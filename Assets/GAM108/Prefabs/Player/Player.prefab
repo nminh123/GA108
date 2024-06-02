@@ -379,7 +379,7 @@ MonoBehaviour:
   JumpForce: 14
   isGround: 0
   islive: 1
-  Hp: 20
+  Hp: 5
   _time: 0.5
   HPTIME: 2
   isHp: 0
@@ -387,7 +387,7 @@ MonoBehaviour:
   CountDownAatack: 0
   skill: {fileID: 555147222493038472, guid: fd6c990c0ee12c6468235576c77fb77c, type: 3}
   PointShot: {fileID: 8947262332127304677}
-  skillTime: 2
+  skillTime: 0
   CountDownSkill: 2
 --- !u!114 &7558190370752816720
 MonoBehaviour:

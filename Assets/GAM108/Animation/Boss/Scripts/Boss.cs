@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class Boss : MonoBehaviour
@@ -16,11 +17,13 @@ public class Boss : MonoBehaviour
     public float ResetTime;
     [Header("HP")]
     public int Heal;
+    public bool CanAttack = true;
 
     private void Update()
     {
         StartTime -= Time.deltaTime;
-        
+
+
     }
     public void loadTime(bool _Time)
     {
@@ -39,11 +42,12 @@ public class Boss : MonoBehaviour
         if(Heal <= 0)
         {
             Die();
+            return;
         }
     }
     public void Die()
     {
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
     public void LookPlayer()
     {
@@ -73,6 +77,23 @@ public class Boss : MonoBehaviour
             Debug.Log("chet ne x2");
         }
             
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("HitBox") || collision.gameObject.CompareTag("Skill") && CanAttack)
+        {
+
+            CanAttack = false;           
+            takeDame(1);
+            StartCoroutine(resetHit());
+            
+        }
+    }
+    IEnumerator resetHit()
+    {
+
+        yield return new WaitForSecondsRealtime(1);
+        CanAttack = true;
     }
 
 }
