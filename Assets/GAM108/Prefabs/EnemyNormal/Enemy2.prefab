@@ -272,8 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  leftEnemy: 4.33
-  rightEnemy: 11.65
+  leftEnemy: 81.43
+  rightEnemy: 87.05
   colli: {fileID: 5258487336325257907}
   target: {fileID: 0}
   range: 1

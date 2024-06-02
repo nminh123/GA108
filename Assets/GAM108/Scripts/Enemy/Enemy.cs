@@ -41,7 +41,12 @@ public class Enemy : MonoBehaviour
     {
         MoveEnemy();
     }
-
+    
+    void deah()
+    {
+        Destroy(gameObject, 1.1f);
+        return;
+    }
     private void MoveEnemy()
     {
         //lay vi tri hien tai cua enemy
@@ -77,10 +82,11 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("HitBox") || collision.gameObject.CompareTag("Skill"))
         {
+
             colli.enabled = false;
             speed = 0f;
             anim.SetTrigger("Deah");
-            Destroy(gameObject, 1.1f);
+            deah();
 
         }
     }
