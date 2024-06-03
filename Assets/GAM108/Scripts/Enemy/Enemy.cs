@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -17,16 +18,22 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float rightEnemy = 0f;
     #endregion
+    private Animator anim;
+    public Collider2D colli;
+    public GameObject target;
+    public float range;
+    bool canAttack = true;
 
     //check xem quai di chuyen trai hay phai
     private bool isMovingRight = true;
-
+    
     private SpriteRenderer eScale;
 
     // Start is called before the first frame update
     void Start()
     {
         eScale = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,7 +41,12 @@ public class Enemy : MonoBehaviour
     {
         MoveEnemy();
     }
-
+    
+    void deah()
+    {
+        Destroy(gameObject, 1.1f);
+        return;
+    }
     private void MoveEnemy()
     {
         //lay vi tri hien tai cua enemy
@@ -43,41 +55,54 @@ public class Enemy : MonoBehaviour
         {
             //di chuyen sang trai
             isMovingRight = false;
-            eScale.flipX = true;
+            transform.localScale = new Vector3(-1,1,1);
+            //eScale.flipX = true;
         }
         else if(currentPosition.x < leftEnemy)
         {   //di chuyen sang phai
             isMovingRight = true;
-            eScale.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
+            //eScale.flipX = false;
         }
         var direction = isMovingRight ? Vector3.right : Vector3.left;
         transform.Translate(direction * speed * Time.deltaTime);
+        var player = target.gameObject.transform.position;
+        if(target)
+        {
+            if(Vector3.Distance(transform.position,player) <= range && canAttack)
+            {
+                
+                StartCoroutine(eDieAnimation());
+            }
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("HitBox"))
+        if (collision.gameObject.CompareTag("HitBox") || collision.gameObject.CompareTag("Skill"))
         {
-            //StartCoroutine(eDieAnimation());
-            Destroy(gameObject);
-        }
-        if (collision.gameObject.CompareTag("Skill"))
-        {
-            //StartCoroutine(eDieAnimation());
+
+            colli.enabled = false;
             speed = 0f;
-            Destroy(gameObject,.3f);
-               
+            anim.SetTrigger("Deah");
+            deah();
+
         }
     }
 
     //test 
-    //private IEnumerator eDieAnimation()
-    //{
-    //    eAnimator.SetBool("isDie", true);
-    //    yield return new WaitForSeconds(2f);
-    //    Destroy(gameObject);
+    private IEnumerator eDieAnimation()
+    {
+        canAttack = false;
+        anim.SetTrigger("Attack");
+        speed = 0f;
+        yield return new WaitForSeconds(1.5f);
+        anim.ResetTrigger("Attack");
+        speed = 1;
+        canAttack = true;
 
 
-    //}
+    }
 
 }
