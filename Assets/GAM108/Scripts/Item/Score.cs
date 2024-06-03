@@ -19,4 +19,9 @@ public class Score : MonoBehaviour
         score += _addScore;
         scoreTxt.text = score.ToString();
     }
+
+    public int GetScore()
+    {
+        return score;
+    }
 }

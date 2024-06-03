@@ -163,7 +163,7 @@ public class Player : MonoBehaviour
             DoubleJump = 2;
         }
 
-        if(collision.gameObject.tag == Tag.Spike)
+        /*if(collision.gameObject.tag == Tag.Spike)
         {
             //if(isHp == true)
             
@@ -175,7 +175,7 @@ public class Player : MonoBehaviour
                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                SceneManager.LoadScene("GameOver");
             Debug.Log("Chet ne");
-        }
+        }*/
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
