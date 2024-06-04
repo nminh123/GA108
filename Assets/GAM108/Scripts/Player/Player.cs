@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -32,9 +33,19 @@ public class Player : MonoBehaviour
     private bool isMoving = true;
     private bool isGround1;
     private const float OffSetPosition = 10.0f;
+
+    #region Hp Player
+    //thanh mau
+    [SerializeField]
+    private Slider healthSlider;
+
+    private int _healthMax;
+    #endregion
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        _healthMax = 100;
+        healthSlider.maxValue = _healthMax;
     }
 
     public void Update()
@@ -79,12 +90,12 @@ public class Player : MonoBehaviour
     private void Skill()
     {
         skillTime -= Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.I) && skillTime <= 0)
+        if (Input.GetKeyDown(KeyCode.I) && skillTime <= 0)
         {
 
             StartCoroutine(skill1());
             skillTime = CountDownSkill;
-            
+
         }
     }
     IEnumerator skill1()
@@ -127,14 +138,14 @@ public class Player : MonoBehaviour
             isGround1 = false;
 
         }
-        if(DoubleJump ==0)
+        if (DoubleJump == 0)
             isGround = false;
     }
-        
+
     public void TakeDamege(int damege)
     {
         Hp -= damege;
-        if(Hp <= 0)
+        if (Hp <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -170,6 +181,12 @@ public class Player : MonoBehaviour
             {
                 Hp = Hp - 1;
                 isHp = false;
+                _healthMax -= 6;
+                healthSlider.value = _healthMax;
+                if (_healthMax <= 0)
+                {
+                    Destroy(collision.gameObject, 1.1f);
+                }
             }
 
             /*if(collision.gameObject.tag == Tag.Spike)
