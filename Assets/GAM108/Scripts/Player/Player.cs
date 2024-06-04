@@ -154,6 +154,7 @@ public class Player : MonoBehaviour
             Jump();
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == Tag.GroundTag)
@@ -162,6 +163,7 @@ public class Player : MonoBehaviour
             isGround1 = true;
             DoubleJump = 2;
         }
+
         if (collision.gameObject.tag == "HBenemy")
         {
             if (isHp == true)
@@ -170,54 +172,56 @@ public class Player : MonoBehaviour
                 isHp = false;
             }
 
-        /*if(collision.gameObject.tag == Tag.Spike)
+            /*if(collision.gameObject.tag == Tag.Spike)
+            {
+                //if(isHp == true)
+
+                    Hp = Hp -1;
+                    //isHp = false;
+
+
+                if (Hp == 0)
+                   //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                   SceneManager.LoadScene("GameOver");
+                Debug.Log("Chet ne");
+            }*/
+        }
+}
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            //if(isHp == true)
-            
-                Hp = Hp -1;
-                //isHp = false;
-            
-            
+            if (collision.gameObject.tag == Tag.EnemyTag)
+            {
+                if(isHp == true)
+                {
+                    Hp = Hp -1;
+                    isHp = false;
+                }
+
             if (Hp == 0)
                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                SceneManager.LoadScene("GameOver");
-            Debug.Log("Chet ne");
-        }*/
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //if (collision.gameObject.tag == Tag.EnemyTag)
-        //{
-        //    if(isHp == true)
-        //    {
-        //        Hp = Hp -1;
-        //        isHp = false;
-        //    }
-            
-        //    if (Hp == 0)
-        //       //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //       SceneManager.LoadScene("GameOver");
-        //    Debug.Log("chet ne");
-
-        //}
-
-        if(collision.gameObject.tag == Tag.OffSetTag)
-        {
             Debug.Log("chet ne");
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
-            SceneManager.LoadScene("GameOver");
-        }
-    }
-    /*void offSet()
-    {
-        float offsetThreshold = 0.1f; // Define a small threshold for position comparison
-        Vector2 offset = new Vector2(transform.position.x, OffSetPosition);
 
-        // Check if the Y position is within the threshold of OffSetPosition
-        if (Mathf.Abs(this.transform.position.y - OffSetPosition) < offsetThreshold)
+            //}
+
+            if (collision.gameObject.tag == Tag.OffSetTag)
+            {
+                Debug.Log("chet ne");
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+                SceneManager.LoadScene("GameOver");
+            }
+        }
+        /*void offSet()
         {
-            SceneManager.LoadScene(0); // Reload the scene
-        }
-    }*/
+            float offsetThreshold = 0.1f; // Define a small threshold for position comparison
+            Vector2 offset = new Vector2(transform.position.x, OffSetPosition);
 
+            // Check if the Y position is within the threshold of OffSetPosition
+            if (Mathf.Abs(this.transform.position.y - OffSetPosition) < offsetThreshold)
+            {
+                SceneManager.LoadScene(0); // Reload the scene
+            }
+        }*/
+
+    }
 }
