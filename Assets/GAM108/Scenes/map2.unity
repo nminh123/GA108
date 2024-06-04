@@ -373,7 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 242883972}
   - component: {fileID: 242883973}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: parallax-mountain-montain-far (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19878,7 +19878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086915825}
   - component: {fileID: 1086915824}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: parallax-mountain-mountains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20551,7 +20551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1280484921}
   - component: {fileID: 1280484922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: parallax-mountain-montain-far (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20634,7 +20634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1423124523}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ------BackGround-------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22186,7 +22186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016242245}
   - component: {fileID: 2016242244}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: parallax-mountain-bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22270,7 +22270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089468133}
   - component: {fileID: 2089468132}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: parallax-mountain-montain-far
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,16 @@ public class Key : MonoBehaviour
 {
     public Animator anim;
     public GameObject _LoadSecne;
+    private StorageHelper storageHelper;
+    private GameDataPlayed _played;
+
+    private void Start()
+    {
+        storageHelper = new StorageHelper();
+        storageHelper.LoadData();
+        _played = StorageHelper.played;
+    }
+
     private void Awake()
     {
         _LoadSecne.SetActive(true);
@@ -17,6 +28,17 @@ public class Key : MonoBehaviour
         {
             StartCoroutine(LoadSecne());
             
+            var score = FindObjectOfType<Score>().GetScore();
+            var gameData = new GameData()
+            {
+                score = score,
+                timePlayed = DateTime.Now.ToString("yyyy/mm/dd HH:mm:ss")
+            };
+            _played.plays.Add(gameData);
+            storageHelper.SaveData();
+            storageHelper.LoadData();
+            _played = StorageHelper.played;
+            Debug.Log("Count played: "+_played.plays.Count);
         }
     }
     IEnumerator LoadSecne()
