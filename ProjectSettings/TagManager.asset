@@ -12,6 +12,7 @@ TagManager:
   - Skill
   - Spike
   - HBenemy
+  - Boss
   layers:
   - Default
   - TransparentFX
