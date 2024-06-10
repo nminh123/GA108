@@ -142,14 +142,14 @@ public class Player : MonoBehaviour
             isGround = false;
     }
 
-    public void TakeDamege(int damege)
-    {
-        Hp -= damege;
-        if (Hp <= 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
+    //public void TakeDamege(int damege)
+    //{
+    //    Hp -= damege;
+    //    if (Hp <= 0)
+    //    {
+    //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //    }
+    //}
     private void isDeah()
     {
         if (Input.GetKeyDown(KeyCode.U) && islive)
@@ -179,14 +179,9 @@ public class Player : MonoBehaviour
         {
             if (isHp == true)
             {
-                Hp = Hp - 1;
+                //Hp = Hp - 1;
                 isHp = false;
-                _healthMax -= 6;
-                healthSlider.value = _healthMax;
-                if (_healthMax <= 0)
-                {
-                    Destroy(collision.gameObject, 1.1f);
-                }
+               
             }
 
             /*if(collision.gameObject.tag == Tag.Spike)
@@ -203,7 +198,16 @@ public class Player : MonoBehaviour
                 Debug.Log("Chet ne");
             }*/
         }
-}
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            _healthMax -= 6;
+            healthSlider.value = _healthMax;
+            if (_healthMax <= 0)
+            {
+                Destroy(collision.gameObject, 1.1f);
+            }
+        }
+    }
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.tag == Tag.EnemyTag)

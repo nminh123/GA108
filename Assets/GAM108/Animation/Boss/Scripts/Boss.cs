@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
@@ -19,6 +20,23 @@ public class Boss : MonoBehaviour
     public int Heal;
     public bool CanAttack = true;
 
+    #region Health Boss
+    //thanh mau
+    [SerializeField]
+    private Slider healthSlider;
+
+    private int _healthMax;
+
+    [SerializeField]
+    private GameObject hpCanvas;
+    #endregion
+
+    private void Start()
+    {
+        _healthMax = 1000;
+        healthSlider.maxValue = _healthMax;
+        hpCanvas.SetActive(false);
+    }
     private void Update()
     {
         StartTime -= Time.deltaTime;
@@ -56,12 +74,14 @@ public class Boss : MonoBehaviour
         {
             transform.localScale = flip;
             transform.Rotate(0, 180, 0);
+            healthSlider.transform.localScale = new Vector3(-1, 1, 1);
             isRight = true;
         }
         else if(transform.position.x < player.position.x && isRight)
         {
             transform.localScale = flip;
             transform.Rotate(0, 180, 0);
+            healthSlider.transform.localScale = new Vector3(1, 1, 1);
             isRight = false;
         }
     }
@@ -71,11 +91,11 @@ public class Boss : MonoBehaviour
         pos += transform.right * attack.x;
         pos += transform.up * attack.y;
         Collider2D col = Physics2D.OverlapCircle(pos, attackRange, PlayerMask);
-        if (col != null)
-        {
-            col.GetComponent<Player>().TakeDamege(2);
-            Debug.Log("chet ne x2");
-        }
+        //if (col != null)
+        //{
+        //    col.GetComponent<Player>().TakeDamege(2);
+        //    Debug.Log("chet ne x2");
+        //}
             
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -83,8 +103,14 @@ public class Boss : MonoBehaviour
         if (collision.gameObject.CompareTag("HitBox") || collision.gameObject.CompareTag("Skill") && CanAttack)
         {
 
-            CanAttack = false;           
-            takeDame(1);
+            CanAttack = false;
+            hpCanvas.SetActive(true);
+            _healthMax -= 70;
+            healthSlider.value = _healthMax;
+            if (_healthMax <= 0)
+            {
+                Destroy(gameObject, 1.1f);
+            }
             StartCoroutine(resetHit());
             
         }
