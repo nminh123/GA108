@@ -147,7 +147,7 @@ public class Player : MonoBehaviour
     //    Hp -= damege;
     //    if (Hp <= 0)
     //    {
-    //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //        
     //    }
     //}
     private void isDeah()
@@ -205,6 +205,7 @@ public class Player : MonoBehaviour
             if (_healthMax <= 0)
             {
                 Destroy(collision.gameObject, 1.1f);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }
