@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     private bool isMoving = true;
     private bool isGround1;
     private const float OffSetPosition = 10.0f;
+    private Item _item;
 
     #region Hp Player
     //thanh mau
@@ -55,7 +56,7 @@ public class Player : MonoBehaviour
         AnimationController();
         aatack();
         Skill();
-        time();
+        //time();
     }
     private void FixedUpdate()
     {
@@ -113,14 +114,9 @@ public class Player : MonoBehaviour
             AatackTime = CountDownAatack;
         }
     }
-    private void time()
+    private void time(float _Time)
     {
-        _time -= Time.deltaTime;
-        if (isHp == false && _time <= 0)
-        {
-            _time = HPTIME;
-            isHp = true;
-        }
+        
 
     }
     public void Flip()
@@ -152,8 +148,23 @@ public class Player : MonoBehaviour
     //}
     private void isDeah()
     {
+            _time -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.U) && islive)
+        {
             islive = false;
+            if (isHp == false && _time <= 0)
+            {
+                
+                _time = HPTIME;
+                if (_time > 2)
+                {
+                    Hp++;
+                }
+                _time = HPTIME;
+                isHp = true;
+            }
+
+        }
         else if (Input.GetKeyDown(KeyCode.U) && !islive)
             islive = true;
 
@@ -177,12 +188,9 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "HBenemy")
         {
-            if (isHp == true)
-            {
-                //Hp = Hp - 1;
-                isHp = false;
-               
-            }
+
+                Hp = Hp - 1;
+
 
             /*if(collision.gameObject.tag == Tag.Spike)
             {
@@ -208,16 +216,17 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+        if (collision.gameObject.tag == "item")
+        {
+            JumpForce += 2;
+            Destroy(collision.gameObject);
+        }
     }
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.tag == Tag.EnemyTag)
             {
-                if(isHp == true)
-                {
                     Hp = Hp -1;
-                    isHp = false;
-                }
 
             if (Hp == 0)
                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -232,6 +241,7 @@ public class Player : MonoBehaviour
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
                 SceneManager.LoadScene("GameOver");
             }
+            
         }
         /*void offSet()
         {

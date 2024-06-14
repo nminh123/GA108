@@ -3624,6 +3624,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_168
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4b508897b379c4788d57b7ef9396af
+      internalID: 1473855930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_169
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd62da99b6876b645a1d836c7f011991
+      internalID: 1765868974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_170
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb22bff4a40e5a4bae960be2218d1fc
+      internalID: -515259707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sBoss02_C_171
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 0
+        width: 85
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02f162755bf9da419f63916b8b43b55
+      internalID: 1718716210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3712,7 +3796,11 @@ TextureImporter:
       sBoss02_C_165: -1643186852
       sBoss02_C_166: 1549496366
       sBoss02_C_167: 1856195040
+      sBoss02_C_168: 1473855930
+      sBoss02_C_169: 1765868974
       sBoss02_C_17: -2055475336
+      sBoss02_C_170: -515259707
+      sBoss02_C_171: 1718716210
       sBoss02_C_18: 767844892
       sBoss02_C_19: -1510026808
       sBoss02_C_2: 364411335

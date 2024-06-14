@@ -17,7 +17,7 @@ public class Skill : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == Tag.EnemyTag || collision.tag == Tag.GroundTag)
+        if(collision.tag == Tag.EnemyTag || collision.tag == Tag.GroundTag || collision.tag == "Boss")
         {
             anim.SetTrigger("Shotting");
             rb.velocity = new Vector2(0, rb.velocity.y);

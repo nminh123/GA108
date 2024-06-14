@@ -13,6 +13,7 @@ TagManager:
   - Spike
   - HBenemy
   - Boss
+  - item
   layers:
   - Default
   - TransparentFX
