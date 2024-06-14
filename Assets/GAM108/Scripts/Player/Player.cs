@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     private bool isMoving = true;
     private bool isGround1;
     private const float OffSetPosition = 10.0f;
+    private Item _item;
 
     #region Hp Player
     //thanh mau
@@ -215,6 +216,11 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+        if (collision.gameObject.tag == "item")
+        {
+            JumpForce += 2;
+            Destroy(collision.gameObject);
+        }
     }
         private void OnCollisionEnter2D(Collision2D collision)
         {
@@ -235,6 +241,7 @@ public class Player : MonoBehaviour
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
                 SceneManager.LoadScene("GameOver");
             }
+            
         }
         /*void offSet()
         {
