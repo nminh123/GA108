@@ -194,5 +194,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  rb: {fileID: 0}
-  anim: {fileID: 0}
+  rb: {fileID: 5200248459909039375}
+  anim: {fileID: 5275877097326674628}

@@ -20,6 +20,9 @@ public class Boss : MonoBehaviour
     public int Heal;
     public bool CanAttack = true;
 
+    public Transform endGame;
+    public Animator anim;
+
     #region Health Boss
     //thanh mau
     [SerializeField]
@@ -40,6 +43,7 @@ public class Boss : MonoBehaviour
     private void Update()
     {
         StartTime -= Time.deltaTime;
+        endGame.transform.position = this.transform.position;
 
 
     }
@@ -109,7 +113,9 @@ public class Boss : MonoBehaviour
             healthSlider.value = _healthMax;
             if (_healthMax <= 0)
             {
-                Destroy(gameObject, 1.1f);
+                anim.SetTrigger("Deah");
+                Destroy(gameObject, .5f);
+                endGame.gameObject.SetActive(true);
             }
             StartCoroutine(resetHit());
             

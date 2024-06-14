@@ -1,1 +1,1 @@
-{"plays":[{"score":600,"timePlayed":"2024/07/04 09:07:08"}]}
+{"plays":[{"score":600,"timePlayed":"2024/07/04 09:07:08"},{"score":700,"timePlayed":"2024/16/10 21:16:30"},{"score":700,"timePlayed":"2024/15/14 23:15:39"},{"score":700,"timePlayed":"2024/15/14 23:15:39"},{"score":0,"timePlayed":"2024/22/14 23:22:45"}]}
