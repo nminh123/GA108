@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         //_healthMax = 100;
+        Hp = 100;
         healthSlider.maxValue = Hp;
     }
 
@@ -117,7 +118,7 @@ public class Player : MonoBehaviour
     }
     private void time(float _Time)
     {
-        
+
 
     }
     public void Flip()
@@ -149,13 +150,13 @@ public class Player : MonoBehaviour
     //}
     private void isDeah()
     {
-            _time -= Time.deltaTime;
+        _time -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.U) && islive)
         {
             islive = false;
             if (isHp == false && _time <= 0)
             {
-                
+
                 _time = HPTIME;
                 if (_time > 2)
                 {
@@ -191,9 +192,10 @@ public class Player : MonoBehaviour
         {
             if (hitDame)
             {
-                Hp = Hp - 1;
+                Hp = Hp - 4;
                 healthSlider.value = this.Hp;
                 hitDame = false;
+
             }
             else
             {
@@ -218,8 +220,9 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("HBboss"))
         {
-            StartCoroutine(hitdame());
-            if (Hp == 0)
+            _healthMax -= 6;
+            healthSlider.value = Hp;
+            if (_healthMax <= 0)
             {
                 Destroy(collision.gameObject, 1.1f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -231,17 +234,17 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-        private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == Tag.EnemyTag)
         {
-            if (collision.gameObject.tag == Tag.EnemyTag)
-            {
 
-                Hp = Hp - 1;
-                
+            Hp = Hp - 1;
+
 
             if (Hp == 0)
-               //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-               SceneManager.LoadScene("GameOver");
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene("GameOver");
             Debug.Log("chet ne");
 
             //}
@@ -249,10 +252,10 @@ public class Player : MonoBehaviour
             if (collision.gameObject.tag == Tag.OffSetTag)
             {
                 Debug.Log("chet ne");
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
                 SceneManager.LoadScene("GameOver");
             }
-            
+
         }
         /*void offSet()
         {
@@ -266,13 +269,5 @@ public class Player : MonoBehaviour
             }
         }*/
 
-    }
-    IEnumerator hitdame()
-    {
-        hitDame = false;
-        Hp = Hp - 1;
-        healthSlider.value = Hp;
-        yield return new WaitForSecondsRealtime(.5f);
-        hitDame = true;
     }
 }
