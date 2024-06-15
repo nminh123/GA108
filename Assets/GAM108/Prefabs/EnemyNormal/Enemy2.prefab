@@ -489,7 +489,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.058514595, y: -1.0679252}
@@ -539,8 +539,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  leftEnemy: 2.58
-  rightEnemy: 12.51
+  leftEnemy: 31.21
+  rightEnemy: 46.8
   colli: {fileID: 5258487336325257907}
   target: {fileID: 0}
   range: 1
