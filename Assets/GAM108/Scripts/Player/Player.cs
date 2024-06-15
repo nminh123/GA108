@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     private bool isGround1;
     private const float OffSetPosition = 10.0f;
     private Item _item;
+    private bool hitDame = true;
 
     #region Hp Player
     //thanh mau
@@ -45,8 +46,9 @@ public class Player : MonoBehaviour
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        _healthMax = 100;
-        healthSlider.maxValue = _healthMax;
+        //_healthMax = 100;
+        Hp = 100;
+        healthSlider.maxValue = Hp;
     }
 
     public void Update()
@@ -116,7 +118,7 @@ public class Player : MonoBehaviour
     }
     private void time(float _Time)
     {
-        
+
 
     }
     public void Flip()
@@ -148,13 +150,13 @@ public class Player : MonoBehaviour
     //}
     private void isDeah()
     {
-            _time -= Time.deltaTime;
+        _time -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.U) && islive)
         {
             islive = false;
             if (isHp == false && _time <= 0)
             {
-                
+
                 _time = HPTIME;
                 if (_time > 2)
                 {
@@ -188,8 +190,18 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "HBenemy")
         {
+            if (hitDame)
+            {
+                Hp = Hp - 4;
+                healthSlider.value = this.Hp;
+                hitDame = false;
 
-                Hp = Hp - 1;
+            }
+            else
+            {
+                hitDame = true;
+
+            }
 
 
             /*if(collision.gameObject.tag == Tag.Spike)
@@ -209,7 +221,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Boss"))
         {
             _healthMax -= 6;
-            healthSlider.value = _healthMax;
+            healthSlider.value = Hp;
             if (_healthMax <= 0)
             {
                 Destroy(collision.gameObject, 1.1f);
@@ -222,15 +234,17 @@ public class Player : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-        private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == Tag.EnemyTag)
         {
-            if (collision.gameObject.tag == Tag.EnemyTag)
-            {
-                    Hp = Hp -1;
+
+            Hp = Hp - 1;
+
 
             if (Hp == 0)
-               //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-               SceneManager.LoadScene("GameOver");
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene("GameOver");
             Debug.Log("chet ne");
 
             //}
@@ -238,10 +252,10 @@ public class Player : MonoBehaviour
             if (collision.gameObject.tag == Tag.OffSetTag)
             {
                 Debug.Log("chet ne");
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
                 SceneManager.LoadScene("GameOver");
             }
-            
+
         }
         /*void offSet()
         {
