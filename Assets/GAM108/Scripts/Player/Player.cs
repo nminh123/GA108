@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     private bool isGround1;
     private const float OffSetPosition = 10.0f;
     private Item _item;
+    private bool hitDame = true;
 
     #region Hp Player
     //thanh mau
@@ -45,8 +46,8 @@ public class Player : MonoBehaviour
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        _healthMax = 100;
-        healthSlider.maxValue = _healthMax;
+        //_healthMax = 100;
+        healthSlider.maxValue = Hp;
     }
 
     public void Update()
@@ -188,8 +189,17 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "HBenemy")
         {
-
+            if (hitDame)
+            {
                 Hp = Hp - 1;
+                healthSlider.value = this.Hp;
+                hitDame = false;
+            }
+            else
+            {
+                hitDame = true;
+
+            }
 
 
             /*if(collision.gameObject.tag == Tag.Spike)
@@ -206,11 +216,10 @@ public class Player : MonoBehaviour
                 Debug.Log("Chet ne");
             }*/
         }
-        if (collision.gameObject.CompareTag("Boss"))
+        if (collision.gameObject.CompareTag("HBboss"))
         {
-            _healthMax -= 6;
-            healthSlider.value = _healthMax;
-            if (_healthMax <= 0)
+            StartCoroutine(hitdame());
+            if (Hp == 0)
             {
                 Destroy(collision.gameObject, 1.1f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -226,7 +235,9 @@ public class Player : MonoBehaviour
         {
             if (collision.gameObject.tag == Tag.EnemyTag)
             {
-                    Hp = Hp -1;
+
+                Hp = Hp - 1;
+                
 
             if (Hp == 0)
                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -255,5 +266,13 @@ public class Player : MonoBehaviour
             }
         }*/
 
+    }
+    IEnumerator hitdame()
+    {
+        hitDame = false;
+        Hp = Hp - 1;
+        healthSlider.value = Hp;
+        yield return new WaitForSecondsRealtime(.5f);
+        hitDame = true;
     }
 }
