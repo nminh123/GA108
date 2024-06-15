@@ -233,6 +233,13 @@ public class Player : MonoBehaviour
             JumpForce += 2;
             Destroy(collision.gameObject);
         }
+        
+        if (collision.gameObject.tag == Tag.OffSetTag)
+        {
+            Debug.Log("chet ne");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene("GameOver");
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
