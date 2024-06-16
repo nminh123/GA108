@@ -3769,6 +3769,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6962429673051935170, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_Value
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7446658872896982654, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
       propertyPath: m_Color.b
       value: 0.4943396
@@ -3881,8 +3885,8 @@ GameObject:
   - component: {fileID: 1245468211}
   - component: {fileID: 1245468212}
   - component: {fileID: 1245468214}
-  - component: {fileID: 1245468213}
   - component: {fileID: 1245468215}
+  - component: {fileID: 1245468216}
   m_Layer: 0
   m_Name: PS_Items_8
   m_TagString: Untagged
@@ -3957,18 +3961,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1245468213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245468210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7886a887c3d887843b823291873d3633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1245468214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4035,6 +4027,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1245468216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245468210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7886a887c3d887843b823291873d3633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1277618683
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,7 +4425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688573222}
   m_Layer: 0
-  m_Name: EndGame
+  m_Name: End Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
