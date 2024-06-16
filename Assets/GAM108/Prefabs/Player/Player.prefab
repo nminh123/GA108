@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &352540681164571745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3770945704033443160}
+  m_Layer: 0
+  m_Name: Support
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3770945704033443160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352540681164571745}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.74, y: 1.12, z: 0.13588132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4149340955397916403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3355438576774928055
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5290380571438738958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -753,6 +784,7 @@ Transform:
   - {fileID: 988594247733694430}
   - {fileID: 4308191881921469999}
   - {fileID: 7334237198880590989}
+  - {fileID: 3770945704033443160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &360207497490312324
@@ -912,14 +944,18 @@ MonoBehaviour:
   _time: 0.5
   HPTIME: 2
   isHp: 0
-  AatackTime: 0
+  AatackTime: 0.7
   CountDownAatack: 0.7
   skill: {fileID: 555147222493038472, guid: fd6c990c0ee12c6468235576c77fb77c, type: 3}
   PointShot: {fileID: 8947262332127304677}
-  skillTime: 0
+  skillTime: 2
   CountDownSkill: 2
+  sp: {fileID: 4708557391833991354, guid: 15297e844090328409636cd6bc5fa716, type: 3}
+  pointSp: {fileID: 3770945704033443160}
   canvasSpeed: {fileID: 3355438576774928055}
   healthSlider: {fileID: 7544458591305778990}
+  CownDownSkill: {fileID: 0}
+  CownDownAt: {fileID: 0}
   _myAudioSkill: {fileID: 8300000, guid: 873c87492eab73f43a12a9115fdb0203, type: 3}
   _myAudioAttack: {fileID: 8300000, guid: e2acc9cd6eafd864ba75f38151e1adad, type: 3}
   _myAudioisHealth: {fileID: 8300000, guid: 4acec6542becd7e45981e24a6234b9c0, type: 3}
