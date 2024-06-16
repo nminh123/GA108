@@ -923,9 +923,9 @@ MonoBehaviour:
   _myAudioSkill: {fileID: 8300000, guid: 873c87492eab73f43a12a9115fdb0203, type: 3}
   _myAudioAttack: {fileID: 8300000, guid: e2acc9cd6eafd864ba75f38151e1adad, type: 3}
   _myAudioisHealth: {fileID: 8300000, guid: 4acec6542becd7e45981e24a6234b9c0, type: 3}
-  _myAudioisBoss: {fileID: 0}
+  _myAudioisBoss: {fileID: 8300000, guid: 3ed4a0149fb29d24db9ea251d940749e, type: 3}
   _myAudioItemSpeed: {fileID: 8300000, guid: 4eb5398d13e0363499eb94cadad9a9df, type: 3}
-  _myAudioJump: {fileID: 0}
+  _myAudioJump: {fileID: 8300000, guid: 83b9c6d57b89da24d9b1d83d8614daf6, type: 3}
 --- !u!114 &7558190370752816720
 MonoBehaviour:
   m_ObjectHideFlags: 0
