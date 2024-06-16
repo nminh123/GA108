@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     [SerializeField] Transform PointShot;
     [SerializeField] private float skillTime;
     [SerializeField] private float CountDownSkill;
+    [Header("Support")]
+    [SerializeField] GameObject sp;
+    [SerializeField] Transform pointSp;
     private int DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
@@ -43,6 +46,10 @@ public class Player : MonoBehaviour
     //thanh mau
     [SerializeField]
     private Slider healthSlider;
+    [SerializeField]
+    private Slider CownDownSkill;
+    [SerializeField]
+    private Slider CownDownAt;
 
     private int _healthMax;
     #endregion
@@ -73,6 +80,8 @@ public class Player : MonoBehaviour
         //_healthMax = 100;
         Hp = 100;
         healthSlider.maxValue = Hp;
+        CownDownSkill.maxValue = skillTime;
+        CownDownAt.maxValue = AatackTime;
 
         myAudioSource = GetComponent<AudioSource>();
 
@@ -87,6 +96,7 @@ public class Player : MonoBehaviour
         aatack();
         Skill();
         //time();
+        support();
     }
     private void FixedUpdate()
     {
@@ -121,12 +131,16 @@ public class Player : MonoBehaviour
     private void Skill()
     {
         skillTime -= Time.deltaTime;
+        CownDownSkill.value = this.skillTime;
         if (Input.GetKeyDown(KeyCode.I) && skillTime <= 0)
         {
 
-            StartCoroutine(skill1());
+            StartCoroutine(skill1());         
             skillTime = CountDownSkill;
-
+        }
+        if(skillTime <= 0)
+        {
+            skillTime = 0;
         }
     }
     IEnumerator skill1()
@@ -135,10 +149,19 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         Instantiate(skill, PointShot.position, transform.rotation);
         myAudioSource.PlayOneShot(_myAudioSkill);
+        CownDownSkill.value = this.skillTime;
+    }
+    private void support()
+    {
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            Instantiate(sp, pointSp.position, transform.rotation);
+        }
     }
     private void aatack()
     {
         AatackTime -= Time.deltaTime;
+        CownDownAt.value = this.AatackTime;
         if (Input.GetKeyDown(KeyCode.J) && AatackTime <= 0)
         {
             anim.SetTrigger("aatacking");
