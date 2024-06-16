@@ -34,11 +34,20 @@ public class Boss : MonoBehaviour
     private GameObject hpCanvas;
     #endregion
 
+    #region Audio
+    private AudioSource myAudioSource; //trinh phat am thanh
+
+    [SerializeField]
+    private AudioClip _myAudio; //file am thanh
+    #endregion
+
     private void Start()
     {
         _healthMax = 1000;
         healthSlider.maxValue = _healthMax;
         hpCanvas.SetActive(false);
+
+        myAudioSource =GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -78,29 +87,31 @@ public class Boss : MonoBehaviour
         {
             transform.localScale = flip;
             transform.Rotate(0, 180, 0);
-            healthSlider.transform.localScale = new Vector3(-1, 1, 1);
+            //healthSlider.transform.localScale = new Vector3(1, 1, 1);
             isRight = true;
         }
         else if(transform.position.x < player.position.x && isRight)
         {
             transform.localScale = flip;
             transform.Rotate(0, 180, 0);
-            healthSlider.transform.localScale = new Vector3(1, 1, 1);
+            //healthSlider.transform.localScale = new Vector3(-1, 1, 1);
             isRight = false;
         }
     }
     public void Attack()
     {
         Vector3 pos = transform.position;
+        
         pos += transform.right * attack.x;
         pos += transform.up * attack.y;
         Collider2D col = Physics2D.OverlapCircle(pos, attackRange, PlayerMask);
+        myAudioSource.PlayOneShot(_myAudio);
         //if (col != null)
         //{
         //    col.GetComponent<Player>().TakeDamege(2);
         //    Debug.Log("chet ne x2");
         //}
-            
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -116,6 +127,7 @@ public class Boss : MonoBehaviour
                 anim.SetTrigger("Deah");
                 Destroy(gameObject, .5f);
                 endGame.gameObject.SetActive(true);
+                hpCanvas.SetActive(false);
             }
             StartCoroutine(resetHit());
             

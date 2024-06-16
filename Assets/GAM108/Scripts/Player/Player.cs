@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
     private Item _item;
     private bool hitDame = true;
 
+    [SerializeField]
+    private GameObject canvasSpeed;
+
     #region Hp Player
     //thanh mau
     [SerializeField]
@@ -43,12 +46,37 @@ public class Player : MonoBehaviour
 
     private int _healthMax;
     #endregion
+
+    #region Audio
+    private AudioSource myAudioSource; //trinh phat am thanh
+
+    [SerializeField]
+    private AudioClip _myAudioSkill; //file am thanh
+
+    [SerializeField]
+    private AudioClip _myAudioAttack; //file am thanh
+
+    [SerializeField]
+    private AudioClip _myAudioisHealth; //file am thanh
+    [SerializeField]
+    private AudioClip _myAudioisBoss; //file am thanh
+
+    [SerializeField]
+    private AudioClip _myAudioItemSpeed; //file am thanh
+
+    [SerializeField]
+    private AudioClip _myAudioJump;
+    #endregion
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         //_healthMax = 100;
         Hp = 100;
         healthSlider.maxValue = Hp;
+
+        myAudioSource = GetComponent<AudioSource>();
+
+        canvasSpeed.SetActive(false);
     }
 
     public void Update()
@@ -106,6 +134,7 @@ public class Player : MonoBehaviour
         anim.SetTrigger("aatacking");
         yield return new WaitForSeconds(.3f);
         Instantiate(skill, PointShot.position, transform.rotation);
+        myAudioSource.PlayOneShot(_myAudioSkill);
     }
     private void aatack()
     {
@@ -114,6 +143,7 @@ public class Player : MonoBehaviour
         {
             anim.SetTrigger("aatacking");
             AatackTime = CountDownAatack;
+            myAudioSource.PlayOneShot(_myAudioAttack);
         }
     }
     private void time(float _Time)
@@ -134,7 +164,7 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             isGround = true;
             isGround1 = false;
-
+            myAudioSource.PlayOneShot(_myAudioJump);
         }
         if (DoubleJump == 0)
             isGround = false;
@@ -186,6 +216,7 @@ public class Player : MonoBehaviour
             isGround = true;
             isGround1 = true;
             DoubleJump = 2;
+
         }
 
         if (collision.gameObject.tag == "HBenemy")
@@ -193,6 +224,7 @@ public class Player : MonoBehaviour
             if (hitDame)
             {
                 Hp = Hp - 4;
+                myAudioSource.PlayOneShot(_myAudioisHealth);
                 healthSlider.value = this.Hp;
                 hitDame = false;
                 if(Hp <= 0)
@@ -227,6 +259,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("HBboss"))
         {
             Hp -= 6;
+            myAudioSource.PlayOneShot(_myAudioisBoss);
             healthSlider.value = Hp;
             if (Hp <= 0)
             {
@@ -237,7 +270,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             JumpForce += 2;
+            myAudioSource.PlayOneShot(_myAudioItemSpeed);
             Destroy(collision.gameObject);
+            StartCoroutine(timeItem());
         }
         
         if (collision.gameObject.tag == Tag.OffSetTag)
@@ -282,5 +317,12 @@ public class Player : MonoBehaviour
             }
         }*/
 
+    }
+
+    IEnumerator timeItem()
+    {
+        canvasSpeed.SetActive(true);
+        yield return new WaitForSeconds(3.4f);
+        canvasSpeed.SetActive(false);
     }
 }

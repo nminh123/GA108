@@ -11,11 +11,20 @@ public class Key : MonoBehaviour
     private StorageHelper storageHelper;
     private GameDataPlayed _played;
 
+
+    #region Audio
+    private AudioSource myAudioSource; //trinh phat am thanh
+
+    [SerializeField]
+    private AudioClip _myAudio; //file am thanh
+    #endregion
     private void Start()
     {
         storageHelper = new StorageHelper();
         storageHelper.LoadData();
         _played = StorageHelper.played;
+
+        myAudioSource = GetComponent<AudioSource>();
     }
 
     private void Awake()
@@ -44,6 +53,7 @@ public class Key : MonoBehaviour
     IEnumerator LoadSecne()
     {
         anim.SetTrigger("end");
+        myAudioSource.PlayOneShot(_myAudio);
         yield return new WaitForSecondsRealtime(1);
         anim.SetTrigger("start");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
