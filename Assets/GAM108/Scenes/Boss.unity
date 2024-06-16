@@ -3319,6 +3319,7 @@ GameObject:
   - component: {fileID: 750973276}
   - component: {fileID: 750973279}
   - component: {fileID: 750973280}
+  - component: {fileID: 750973281}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3461,6 +3462,102 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!82 &750973281
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750973275}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b11b47c7386e0974d8e3fcf1e0457ac6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.365
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1036870469
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,6 +3858,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1036870472}
     m_Modifications:
+    - target: {fileID: 102470252214696638, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 6.1727
+      objectReference: {fileID: 0}
+    - target: {fileID: 102470252214696638, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.8852
+      objectReference: {fileID: 0}
+    - target: {fileID: 102470252214696638, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 102470252214696638, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.28
+      objectReference: {fileID: 0}
     - target: {fileID: 594762420212296015, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3868,6 +3981,18 @@ PrefabInstance:
     - target: {fileID: 7883096950290044068, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
       propertyPath: m_Name
       value: HealthEnemyCanvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689746352246687956, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.4285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689746352246687956, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.487
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689746352246687956, guid: 5b6b24c0988bc27458fc4deffab92ece, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.067991
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
