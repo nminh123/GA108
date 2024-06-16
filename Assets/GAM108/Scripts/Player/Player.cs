@@ -226,9 +226,9 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("HBboss"))
         {
-            _healthMax -= 6;
+            Hp -= 6;
             healthSlider.value = Hp;
-            if (_healthMax <= 0)
+            if (Hp <= 0)
             {
                 Destroy(collision.gameObject, 1.1f);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

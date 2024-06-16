@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +8,11 @@ public class EndGame : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Destroy(gameObject);
             SceneManager.LoadScene("GameOver");
+
         }
     }
+
 
 }
