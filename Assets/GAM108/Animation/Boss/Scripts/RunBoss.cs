@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RunBoss : StateMachineBehaviour
@@ -10,12 +11,15 @@ public class RunBoss : StateMachineBehaviour
     [SerializeField] float speed = 2.5f;
     [SerializeField] float attackRange = 3;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+
+
+
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
          player = GameObject.FindGameObjectWithTag("Player").transform;
          rb =animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<Boss>();
-        
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -32,6 +36,7 @@ public class RunBoss : StateMachineBehaviour
         {
             rb.velocity = new Vector2(0, 0);           
             animator.SetTrigger("Attack");
+
             return;
         }
     }
