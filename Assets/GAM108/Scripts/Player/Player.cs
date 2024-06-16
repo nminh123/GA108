@@ -195,12 +195,18 @@ public class Player : MonoBehaviour
                 Hp = Hp - 4;
                 healthSlider.value = this.Hp;
                 hitDame = false;
-
+                if(Hp <= 0)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
             }
             else
             {
                 hitDame = true;
-
+                if (Hp <= 0)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
             }
 
 
