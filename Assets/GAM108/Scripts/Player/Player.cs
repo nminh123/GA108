@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float CountDownSkill;
     [Header("Support")]
     [SerializeField] GameObject sp;
-    [SerializeField] Transform pointSp;
+    [SerializeField] private Transform pointSp;
     private int DoubleJump;
     private float moveDirection;
     private bool facingRight = true;
@@ -147,8 +147,9 @@ public class Player : MonoBehaviour
     {
         anim.SetTrigger("aatacking");
         yield return new WaitForSeconds(.3f);
-        Instantiate(skill, PointShot.position, transform.rotation);
         myAudioSource.PlayOneShot(_myAudioSkill);
+        Instantiate(skill, PointShot.position, transform.rotation);
+        
         CownDownSkill.value = this.skillTime;
     }
     private void support()
