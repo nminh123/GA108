@@ -10,7 +10,7 @@ public class Setting : MonoBehaviour
     {
         inputPasue();
     }
-    void inputPasue()
+     void inputPasue()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && isPause)
         {
