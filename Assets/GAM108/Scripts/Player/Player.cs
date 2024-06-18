@@ -346,6 +346,7 @@ public class Player : MonoBehaviour
     IEnumerator timeItem()
     {
         canvasSpeed.SetActive(true);
+        Score.score = 0;
         yield return new WaitForSeconds(3.4f);
         canvasSpeed.SetActive(false);
     }

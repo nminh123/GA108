@@ -19,6 +19,7 @@ public class Menu : MonoBehaviour
         StartCoroutine(timeLoadScene());
         
     }
+
     public void LoadExit()
     {
         myAdio.PlayOneShot(myClip);
@@ -29,6 +30,7 @@ public class Menu : MonoBehaviour
         myAdio.PlayOneShot(myClip);
         StartCoroutine(timeLoadScene());
         SceneManager.LoadScene("MainMenu");
+        Score.score = 0;
     }
 
     IEnumerator timeLoadScene()
