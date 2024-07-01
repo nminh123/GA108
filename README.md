@@ -3,11 +3,13 @@ Dự án mẫu (Kỳ 3, mẫu 1)
 Dự án này thuộc về toàn bộ thành viên nhóm 9 lớp GA19301.
 Và đã kết thúc.!
 Điểm: 9
--------------------------------------------------------------
-Dự án về game platform cơ bản thuộc dự án mẫu của trường cao đẳng FPT Polytechnic - khoá 19.3.1 thực hiện.
+Nội dung:
+- Dự án về game platform cơ bản thuộc dự án mẫu của trường cao đẳng FPT Polytechnic - khoá 19.3.1 thực hiện.
 -------------------------------------------------------------
 Dự án sử dụng
-![unity](https://github.com/nminh123/GAM108/assets/160375525/264fb27e-bbd7-4bca-8fdf-13969c487eb0)
+Công nghệ: 
+![Unitylogohighres](https://github.com/nminh123/GAM108/assets/160375525/a5e54787-408a-46ed-9946-9d7572e317ce)
+Ngôn ngữ:
 ![c-sharp-la-gi-10](https://github.com/nminh123/GAM108/assets/160375525/143d744e-0253-4d8f-abc1-20537249bec0)
 -------------------------------------------------------------
 <img width="962" alt="Ảnh màn hình 2024-07-01 lúc 23 20 01" src="https://github.com/nminh123/GAM108/assets/160375525/cc981868-3371-452e-8b0e-7af8fdcd74e8">
